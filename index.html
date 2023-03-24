@@ -119,95 +119,91 @@
     <section class="block" id="three">
       <h2>ЗАБРОНИРОВАТЬ ЗАЛ ПРОСТО</h2>
 
-      <article>
-        <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+      <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
 
+        <fieldset>
+          <legend>Выбери зал</legend>
+          <input type="radio" name="room" value="80s-vibes" lang="en">80'S VIBES
+          <input type="radio" name="room" value="star-wars" lang="en">STAR WARS
+          <input type="radio" name="room" value="wild-west" lang="en">WILD WEST
+          <input type="radio" name="room" value="neon-style" lang="en">NEON STYLE
+        </fieldset>
+
+        <fieldset>
+          <legend>Собери набор развлечений</legend>
           <fieldset>
-            <legend>Выбери зал</legend>
-            <input type="radio" name="room" value="80s-vibes" lang="en">80'S VIBES
-            <input type="radio" name="room" value="star-wars" lang="en">STAR WARS
-            <input type="radio" name="room" value="wild-west" lang="en">WILD WEST
-            <input type="radio" name="room" value="neon-style" lang="en">NEON STYLE
+            <legend>Приставка:</legend>
+            <input type="radio" name="game-console" value="play-station" lang="en">PlayStation
+            <input type="radio" name="game-console" value="sega" lang="en">Sega Mega Drive
+            <input type="radio" name="game-console" value="x-box" lang="en">X-box One S
+            <input type="radio" name="game-console" value="dendy" lang="en">Dendy
           </fieldset>
 
           <fieldset>
-            <legend>Собери набор развлечений</legend>
-            <fieldset>
-              <legend>Приставка:</legend>
-              <input type="radio" name="game-console" value="play-station" lang="en">PlayStation
-              <input type="radio" name="game-console" value="sega" lang="en">Sega Mega Drive
-              <input type="radio" name="game-console" value="x-box" lang="en">X-box One S
-              <input type="radio" name="game-console" value="dendy" lang="en">Dendy
-            </fieldset>
-
-            <fieldset>
-              <legend>Настольные игры:</legend>
-              <input type="checkbox" name="tabletop-game" value="jenga" lang="en">Jenga
-              <input type="checkbox" name="tabletop-game" value="monopoly" lang="en">Monopoly
-              <input type="checkbox" name="tabletop-game" value="munchkin">Манчкин
-              <input type="checkbox" name="tabletop-game" value="alias" lang="en">Alias
-            </fieldset>
-
-            <fieldset>
-              <legend>Дополнительно:</legend>
-              <input type="checkbox" name="extra" value="karaoke">Караоке
-              <input type="checkbox" name="extra" value="vr" lang="en">VR
-            </fieldset>
+            <legend>Настольные игры:</legend>
+            <input type="checkbox" name="tabletop-game" value="jenga" lang="en">Jenga
+            <input type="checkbox" name="tabletop-game" value="monopoly" lang="en">Monopoly
+            <input type="checkbox" name="tabletop-game" value="munchkin">Манчкин
+            <input type="checkbox" name="tabletop-game" value="alias" lang="en">Alias
           </fieldset>
 
           <fieldset>
-            <legend>Выбери дату и время</legend>
-            <label>Дата
-              <input type="date" name="date" required>
-            </label>
-
-            <label>Время
-              <input type="time" name="time" required>
-            </label>
-            <br>
-
-            <label>Сколько человек
-              <input type="number" name="person-number" required>
-            </label>
-            <br>
-
-            <label>Имя
-              <input type="text" name="first-name" required>
-            </label>
-            <br>
-
-            <label>Фамилия
-              <input type="text" name="last-name" required>
-            </label>
-            <br>
-
-            <label>Телефон
-              <input type="tel" name="tel" required>
-            </label>
-            <br>
-
-            <label lang="en">E-mail
-              <input type="email" name="email" required>
-            </label>
+            <legend>Дополнительно:</legend>
+            <input type="checkbox" name="extra" value="karaoke">Караоке
+            <input type="checkbox" name="extra" value="vr" lang="en">VR
           </fieldset>
+        </fieldset>
 
-          <button type="submit">Забронировать</button>
-        </form>
-      </article>
+        <fieldset>
+          <legend>Выбери дату и время</legend>
+          <label>Дата
+            <input type="date" name="date" required>
+          </label>
+
+          <label>Время
+            <input type="time" name="time" required>
+          </label>
+          <br>
+
+          <label>Сколько человек
+            <input type="number" name="person-number" required>
+          </label>
+          <br>
+
+          <label>Имя
+            <input type="text" name="first-name" required>
+          </label>
+          <br>
+
+          <label>Фамилия
+            <input type="text" name="last-name" required>
+          </label>
+          <br>
+
+          <label>Телефон
+            <input type="tel" name="tel" required>
+          </label>
+          <br>
+
+          <label lang="en">E-mail
+            <input type="email" name="email" required>
+          </label>
+        </fieldset>
+
+        <button type="submit">Забронировать</button>
+      </form>
     </section>
 
     <section class="block" id="two">
       <h2>О нас</h2>
 
-      <article>
-        <p>Для наших гостей мы создали <em>концептуально новое игровое пространство виртуальной реальности</em> в центральной части города.</p>
-        <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+      <p>Для наших гостей мы создали <em>концептуально новое игровое пространство виртуальной реальности</em> в центральной части города.</p>
+      <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
 
-        <blockquote>
-          <p><q><b lang="en">GAME OVER</b> — это место незабываемых впечатлений</q></p>
-          <cite>Аркадий Абакшин, создатель игровой территории <span lang="en">GAME OVER</span></cite>
-        </blockquote>
-      </article>
+      <blockquote>
+        <p><q><b lang="en">GAME OVER</b> — это место незабываемых впечатлений</q></p>
+        <cite>Аркадий Абакшин, создатель игровой территории <span lang="en">GAME OVER</span></cite>
+      </blockquote>
     </section>
 
     <section class="block" id="four">
