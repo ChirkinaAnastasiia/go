@@ -7,6 +7,10 @@ body {
   color: #FFFFFF;
 }
 
+.text-case {
+  text-transform: uppercase;
+}
+
 .blockquote {
   text-transform: uppercase;
 }
