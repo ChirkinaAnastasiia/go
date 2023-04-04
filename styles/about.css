@@ -1,0 +1,84 @@
+.about {
+  width: 1180px;
+  height: 546px;
+  margin-bottom: 100px;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.about__subject {
+  margin: 0;
+  padding: 0;
+  white-space: pre-line;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.about__subject_margin {
+  margin-bottom: 70px;
+}
+
+.blockquote {
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 0;
+  width: 1180px;
+  height: 230px;
+  position: relative;
+}
+
+.blockquote__subject {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  white-space: pre-wrap;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.quote-decoration {
+  font-weight: 900;
+  font-size: 44px;
+  color: #6C0287;
+}
+
+.blockquote__cite {
+  margin: 0;
+  padding: 0;
+  white-space: pre-line;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 28px;
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+}
+
+.blockquote__image {
+  margin: 0;
+  padding: 0;
+}
+
+.text-case {
+  text-transform: uppercase;
+}
+
+.blockquote__cite::before {
+  content: " ";
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 260px;    
+  background-image: url('../image/about_boss.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
