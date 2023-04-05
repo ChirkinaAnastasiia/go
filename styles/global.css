@@ -17,7 +17,6 @@ body {
   font-weight: 400;
   color: #ffffff;
   background-color: #1b1a1b;
-  padding-top: 146px;
 }
 
 
@@ -76,6 +75,10 @@ iframe {
   max-width: 1440px;
   padding: 0 130px;
   margin: 0 auto;
+}
+
+.header {
+  padding-top: 146px;
 }
 
 .footer {
