@@ -1,13 +1,9 @@
 .reservation {
-  width: 1180px;
-  height: 455px;
   margin-bottom: 100px;
 }
 
 .reservation__title {
-  margin: 0;
   margin-bottom: 50px;
-  padding: 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;

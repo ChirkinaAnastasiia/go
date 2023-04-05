@@ -1,15 +1,26 @@
 .hero {
   margin-bottom: 100px;
-  width: 1180px;
-  height: 823px;
+}
+
+.hero__container{
+  width: 1440px;
+  height: 823px; 
+  position: relative;
+}
+
+.hero__container:after {
+  content: " ";
+  width: 675px;
+  height: 762px;
+  position: absolute;
+  right: 130px;
+  bottom: 0;
   background-image: url('../image/hero_man.png');
-  background-position: bottom right;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
 .hero__title {
-  margin: 0;
-  padding: 0;
   line-height: 150px;
   text-transform: uppercase;
   letter-spacing: -15px;
@@ -18,9 +29,7 @@
 }
 
 .hero__description {
-  margin: 0;
   margin-left: 100px;
-  padding: 0;
   font-size: 28px;
-  }
+}
 

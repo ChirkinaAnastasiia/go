@@ -1,23 +1,13 @@
 .faq {
-  width: 1180px;
-  height: 611px;
   margin-bottom: 100px;
 }
 
 .faq__title {
-  margin: 0;
   margin-bottom: 50px;
-  padding: 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 40px;
-}
-
-.faq__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .faq__item {

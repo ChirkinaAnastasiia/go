@@ -1,12 +1,5 @@
-.footer {
-  width: 1180px;
-  height: 364px;
-}
-
 .footer__title {
-  margin: 0;
   margin-bottom: 60px;
-  padding: 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -18,9 +11,7 @@ font-style: normal;
 }
 
 .address__location {
-  margin: 0;
   margin-bottom: 38px;
-  padding: 0;
   padding-left: 62px;
   position: relative;
   white-space: pre-line;
@@ -42,9 +33,7 @@ font-style: normal;
 }
 
 .address__tel {
-  margin: 0;
   margin-bottom: 11px;
-  padding: 0;
   padding-left: 62px;
   position: relative;
   font-weight: 700;
@@ -70,9 +59,7 @@ font-style: normal;
 }
 
 .address__email {
-  margin: 0;
   margin-bottom: 39px;
-  padding: 0;
   padding-left: 62px;
   position: relative;
   font-weight: 700;
@@ -90,12 +77,6 @@ font-style: normal;
   background-image: url('../image/contacts_envelope.svg');
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.social__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .social__item {

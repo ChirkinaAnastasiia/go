@@ -1,13 +1,9 @@
 .about {
-  width: 1180px;
-  height: 546px;
   margin-bottom: 100px;
 }
 
 .about__title {
-  margin: 0;
   margin-bottom: 50px;
-  padding: 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -15,8 +11,6 @@
 }
 
 .about__subject {
-  margin: 0;
-  padding: 0;
   white-space: pre-line;
   font-size: 20px;
   line-height: 28px;
@@ -27,18 +21,14 @@
 }
 
 .blockquote {
-  margin: 0;
   margin-bottom: 100px;
-  padding: 0;
   width: 1180px;
   height: 230px;
   position: relative;
 }
 
 .blockquote__subject {
-  margin: 0;
   margin-bottom: 40px;
-  padding: 0;
   white-space: pre-wrap;
   font-size: 44px;
   line-height: 50px;
@@ -52,8 +42,6 @@
 }
 
 .blockquote__cite {
-  margin: 0;
-  padding: 0;
   white-space: pre-line;
   font-size: 20px;
   font-style: normal;
@@ -61,11 +49,6 @@
   position: absolute;
   right: 30px;
   bottom: 0;
-}
-
-.blockquote__image {
-  margin: 0;
-  padding: 0;
 }
 
 .text-case {

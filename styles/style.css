@@ -1,19 +1,8 @@
+@import "./normalize.css";
+@import "./global.css";
 @import "./hero.css";
 @import "./halls.css";
 @import "./reservation.css";
 @import "./about.css";
 @import "./faq.css";
 @import "./contacts.css";
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0 auto;
-  padding: 146px 130px 51px;
-  width: 1440px;
-  background-color: #1b1a1b;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-}

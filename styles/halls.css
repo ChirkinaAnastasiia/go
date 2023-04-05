@@ -1,13 +1,9 @@
 .halls {
-  width: 1180px;
-  height: 3136px;
   margin-bottom: 100px;
 }
 
 .halls__title {
-  margin: 0;
   margin-bottom: 60px;
-  padding: 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -15,19 +11,10 @@
 }
 
 .halls__list {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
-.halls__item {
-  margin: 0;
-  padding: 0;
-}
-
 .card__link {
-  margin: 0;
-  padding: 0;
   text-decoration: none;
 }
 
@@ -40,8 +27,6 @@
 }
 
 .card__title {
-  margin: 0;
-  padding: 0;
   text-transform: uppercase;
   text-align: center;
   white-space: pre-line;
