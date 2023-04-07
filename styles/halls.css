@@ -16,25 +16,22 @@
 
 .card__link {
   text-decoration: none;
+  display: inline-block;
+  position: relative;
 }
 
 .card:not(:last-child) {
   margin-bottom: 60px;
 }
 
-.card__link {
-  position: relative;
-}
-
 .card__title {
   text-transform: uppercase;
-  text-align: center;
-  white-space: pre-line;
   font-weight: 700;
   font-size: 70px;
   color: #fff;
   position: absolute;
-  left: 484px;
-  bottom: 275px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 

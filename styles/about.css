@@ -10,58 +10,76 @@
   font-size: 40px;
 }
 
-.about__subject {
+.about__image {
+  margin-right: 70px;
+}
+
+.about__description {
+  display:inline-block;
+  max-width: 500px;
+}
+
+.about__text {
+  display: inline-block;
+  max-width: 500px;
+  margin-bottom: 55px;
   white-space: pre-line;
   font-size: 20px;
   line-height: 28px;
 }
 
-.about__subject_margin {
-  margin-bottom: 70px;
-}
-
-.blockquote {
-  margin-bottom: 100px;
-  width: 1180px;
-  height: 230px;
-  position: relative;
-}
-
-.blockquote__subject {
+.blockquote__quote {
+  padding-left: 30px;
   margin-bottom: 40px;
-  white-space: pre-wrap;
+}
+
+.quote {
+  display: inline-block;
+  max-width: 500px;
+  white-space: pre-line;
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
+  position: relative;
 }
 
-.quote-decoration {
+.quote:before {
+  content: "\201c";
   font-weight: 900;
   font-size: 44px;
   color: #6C0287;
+  position: absolute;
+  left: -30px;
+  top: -15px;
+}
+
+.quote:after {
+  content: "\201d";
+  font-weight: 900;
+  font-size: 44px;
+  color: #6C0287;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
 }
 
 .blockquote__cite {
+  padding-left: 100px;
+}
+
+.cite {
+  display: inline-block;
+  padding-left: 110px;
   white-space: pre-line;
   font-size: 20px;
   font-style: normal;
   line-height: 28px;
-  position: absolute;
-  right: 30px;
-  bottom: 0;
+  background-image: url('../image/about_boss.png');
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+  background-position: left;
 }
 
 .text-case {
   text-transform: uppercase;
-}
-
-.blockquote__cite::before {
-  content: " ";
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  right: 260px;    
-  background-image: url('../image/about_boss.png');
-  background-repeat: no-repeat;
-  background-size: contain;
 }
