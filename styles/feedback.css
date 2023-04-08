@@ -1,0 +1,47 @@
+.feedback {
+  margin-bottom: 100px;
+}
+
+.feedback__container {
+  padding: 0 230px;
+}
+
+.feedback__title {
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.feedback__item {
+  display: inline-block;
+}
+
+.feedback__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.feedback__text {
+  display: inline-block;
+  max-width: 670px;
+  padding-top: 50px;
+  vertical-align: top;
+  line-height: 28px;
+}
+
+.feedback__author {
+  display: inline-block;
+  width: 280px;
+  margin-right: 20px;
+}
+
+.author__image {
+  margin-bottom: 11px;
+}
+
+.author__name {
+  text-align: center;
+}
+
+

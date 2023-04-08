@@ -12,19 +12,31 @@
 
 .halls__list {
   list-style: none;
+  display: inline-block;
+}
+
+.halls__item{
+  display: inline-block;
+  max-width: 580px;
+  margin-bottom: 14px;
+}
+
+.halls__item:not(:nth-child(2n)) {
+  margin-right: 14px;
+}
+
+.halls__item:nth-last-child(-n+2) {
+  margin-bottom: 0;
 }
 
 .card__link {
-  text-decoration: none;
   display: inline-block;
+  text-decoration: none;
   position: relative;
 }
 
-.card:not(:last-child) {
-  margin-bottom: 60px;
-}
-
 .card__title {
+  white-space: nowrap;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 70px;
