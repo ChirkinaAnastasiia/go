@@ -1,0 +1,32 @@
+.rest__title {
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 40px;
+  white-space: pre-line;
+}
+
+.rest__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+  justify-content: space-between;
+}
+
+.figure {
+  display: flex;
+  width: 380px;
+  height: 228px;
+  position: relative;
+}
+
+.figure__text {
+  line-height: 28px;
+  white-space: pre-line;
+  font-weight: 700;
+  position: absolute;
+  top: 166px;
+  left: 40px;
+}

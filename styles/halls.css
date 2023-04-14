@@ -1,5 +1,5 @@
 .halls {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .halls__title {
@@ -36,8 +36,9 @@
 }
 
 .card__title {
-  white-space: nowrap;
+  white-space: pre-line;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
   font-size: 70px;
   color: #fff;

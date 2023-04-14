@@ -1,6 +1,8 @@
 @import "./normalize.css";
 @import "./global.css";
+@import "./header.css";
 @import "./hero.css";
+@import "./rest.css";
 @import "./halls.css";
 @import "./reservation.css";
 @import "./about.css";

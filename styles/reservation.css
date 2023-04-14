@@ -1,15 +1,284 @@
 .reservation {
-  margin-bottom: 100px;
+  padding: 80px 0;
+  background-color: #440f51;
 }
 
+fieldset{
+  border: none;
+  padding: 0;
+}
+
+/*заголовки legend*/
 .reservation__title {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   text-align: center;
   text-transform: uppercase;
+  line-height: 50px;
   font-weight: 700;
   font-size: 40px;
 }
 
+.halls-choice__title,
+.amusement-choice__title,
+.date-choice__title {
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 28px;
+  font-size: 24px;
+}
+
+.console__title,
+.tabletop-game__title,
+.extra__title {
+  margin-bottom: 23px;
+  line-height: 28px;
+  font-size: 24px;
+}
+
+/*выбери зал*/
+.halls-choice {
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.halls-choice__input { /*убираем стили радиокнопок*/
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
 .halls-choice__label {
+  cursor: pointer;
   text-transform: uppercase;
+  line-height: 40px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 7px 15px;
+  width: 250px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.halls-choice__input:checked + label{
+  border: 3px solid #ffffff;
+  background-color: #6c0287;
+  color: #ffffff;
+}
+
+/*собери набор развлечений*/
+.amusement-choice {
+  max-width: 980px;
+  margin: 0 auto 60px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.console,
+.tabletop-game,
+.extra {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.console__label,
+.tabletop-game__label,
+.extra__label {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.console__input {  /*убираем стили радиокнопок*/
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.console__input + label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.console__input + label:before{
+  content: '';
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  margin-right: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.console__input:checked + label:before { /*временный стиль*/
+  border: 7px solid #ffffff;
+  background-color: #6c0287;
+}
+
+.tabletop-game__input,  /*убираем стили чекбоксов*/
+.extra__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.tabletop-game__input + label,
+.extra__input + label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.tabletop-game__input + label:before,
+.extra__input + label:before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 12px;
+  background-color: #ffffff;
+}
+
+.tabletop-game__input:checked + label:before,  /*временный стиль*/
+.extra__input:checked + label:before { 
+  border: 7px solid #ffffff;
+  background-color: #6c0287;
+}
+
+/*выбери дату и время*/
+.date-choice-container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.date-choice {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  row-gap: 50px;
+}
+
+/*блок: дата, время, сколько человек*/
+.date-choice__date {
+  max-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 36px 32px;
+}
+
+.date-choice__date__date-input {
+  border: none;
+  width: 134px;
+  height: 52px;
+  padding: 12px 20px;
+  background-color: #ffffff;
+}
+
+.date-choice__date__time-input {
+  border: none;
+  width: 134px;
+  height: 52px;
+  padding: 12px 20px;
+  background-color: #ffffff;
+}
+
+.date-choice__date__label {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.date-choice__date__label:after {
+  content: '';
+  width: 21px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 27px;
+  background-image: url(../image/input_triangle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.date-choice__date__select {
+  padding: 12px 20px;
+  appearance: none;
+  border: none;
+  background-color: inherit;
+  width: 300px;
+  height: 52px;
+}
+
+/*блок:имя, фамилия*/
+.date-choice__name {
+  max-width: 280px;
+  height: 162px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.date-choice__name__label {
+  display: block;
+  margin-bottom: 6px;
+  line-height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.date-choice__name__input {
+  padding: 10px;
+  width: 280px;
+  height: 52px;
+  border: none;
+  background-color: #ffffff;
+}
+
+/*блок: телефон, e-mail*/
+.date-choice__contacts {
+  max-width: 300px;
+  height: 162px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.date-choice__contacts__label {
+  display: block;
+  margin-bottom: 6px;
+  line-height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.date-choice__contacts__input {
+  padding: 10px;
+  width: 300px;
+  height: 52px;
+  border: none;
+  background-color: #ffffff;
+}
+
+/*кнопка: забронировать*/
+.reservation__form__button {
+  display: block;
+  margin-left: auto;
+  padding: 16px 50px;
+  width: 300px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #6c0287;
+  text-transform: uppercase;
+  line-height: 28px;
+  font-weight: 700;
+  font-size: 22px;
 }
