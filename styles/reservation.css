@@ -43,7 +43,7 @@ fieldset{
   justify-content: space-between;
 }
 
-.halls-choice__input { /*убираем стили радиокнопок*/
+.halls-choice__radio { /*убираем стили радиокнопок*/
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -61,12 +61,24 @@ fieldset{
   padding: 7px 15px;
   width: 250px;
   height: 55px;
-  display: flex;
+  display: flex;   /*выравниваем текст по центру*/
   align-items: center;
   justify-content: center;
 }
 
-.halls-choice__input:checked + label{
+.halls-choice__label:hover {
+  background-color: #eadeed;
+  border: 3px solid #640AA3;
+  border-radius: 8px;
+}
+
+.halls-choice__radio:focus + .halls-choice__label{
+  background-color: #ffffff;
+  border: 3px solid #640AA3;
+  border-radius: 8px;
+}
+
+.halls-choice__radio:checked + .halls-choice__label{
   border: 3px solid #ffffff;
   background-color: #6c0287;
   color: #ffffff;
@@ -86,6 +98,7 @@ fieldset{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: flex-start;
 }
 
 .console__label,
@@ -95,20 +108,19 @@ fieldset{
   font-size: 22px;
 }
 
-.console__input {  /*убираем стили радиокнопок*/
+.console__radio {  /*убираем стили радиокнопок*/
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-.console__input + label {
+.console__radio + .console__label {  /*выравеиваем в одну линию*/
   display: inline-flex;
   align-items: center;
 }
 
-.console__input + label:before{
+.console__label:before {
   content: '';
-  display: inline-block;
   width: 27px;
   height: 27px;
   margin-right: 12px;
@@ -116,26 +128,31 @@ fieldset{
   background-color: #ffffff;
 }
 
-.console__input:checked + label:before { /*временный стиль*/
+.console__radio:checked + .console__label:before {
   border: 7px solid #ffffff;
   background-color: #6c0287;
 }
 
-.tabletop-game__input,  /*убираем стили чекбоксов*/
-.extra__input {
+.console__label:focus:before {
+  outline: 1px solid #cd06ff;
+  outline-offset: 3px;
+}
+
+.tabletop-game__checkbox,  /*убираем стили чекбоксов*/
+.extra__checkbox {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-.tabletop-game__input + label,
-.extra__input + label {
+.tabletop-game__checkbox + .tabletop-game__label, /*выравеиваем в одну линию*/
+.extra__checkbox + .extra__label {
   display: inline-flex;
   align-items: center;
 }
 
-.tabletop-game__input + label:before,
-.extra__input + label:before {
+.tabletop-game__label:before,
+.extra__label:before {
   content: '';
   display: inline-block;
   width: 25px;
@@ -144,10 +161,16 @@ fieldset{
   background-color: #ffffff;
 }
 
-.tabletop-game__input:checked + label:before,  /*временный стиль*/
-.extra__input:checked + label:before { 
+.tabletop-game__checkbox:checked + .tabletop-game__label:before,
+.extra__checkbox:checked + .extra__label:before { 
   border: 7px solid #ffffff;
   background-color: #6c0287;
+}
+
+.tabletop-game__label:focus:before,
+.extra__label:focus:before {
+  outline: 1px solid #cd06ff;
+  outline-offset: 3px;
 }
 
 /*выбери дату и время*/
