@@ -41,6 +41,7 @@ fieldset{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .halls-choice__radio {
@@ -67,7 +68,7 @@ fieldset{
   padding: 7px 15px;
   width: 250px;
   height: 55px;
-  display: flex;
+  display: flex; /*выравниваем текст внутри кнопки*/
   align-items: center;
   justify-content: center;
 }
@@ -82,10 +83,10 @@ fieldset{
   background-color: #eadeed;
   border: 3px solid #640AA3;
   border-radius: 8px;
+  transition: 0.2s;
 }
 
-.halls-choice__radio:focus + .halls-choice__label {
-  color: #000000;
+.halls-choice__radio:focus {
   background-color: #ffffff;
   border: 3px solid #640AA3;
   border-radius: 8px;
