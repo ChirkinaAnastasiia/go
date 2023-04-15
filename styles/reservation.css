@@ -81,6 +81,13 @@ fieldset{
   transition: 0.2s;
 }
 
+.halls-choice__radio:focus-visible + .halls-choice__label{
+  background-color: #ffffff;
+  border: 3px solid #640AA3;
+  border-radius: 8px;
+  color: #000000;
+}
+
 /*собери набор развлечений*/
 .amusement-choice {
   max-width: 980px;
@@ -152,6 +159,11 @@ fieldset{
   opacity: 1;
 }
 
+.console__radio:focus-visible {
+  outline: 1px solid #cd06ff;
+  outline-offset: 3px;
+}
+
 .tabletop-game__label,
 .extra__label {
   cursor: pointer;
@@ -208,6 +220,12 @@ fieldset{
 .tabletop-game__checkbox:checked:after,
 .extra__checkbox:checked:after {
   opacity: 1;
+}
+
+.tabletop-game__checkbox:focus-visible,
+.extra__checkbox:focus-visible {
+  outline: 1px solid #cd06ff;
+  outline-offset: 3px;
 }
 
 /*выбери дату и время*/
