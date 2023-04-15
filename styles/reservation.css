@@ -43,10 +43,16 @@ fieldset{
   justify-content: space-between;
 }
 
-.halls-choice__radio { /*убираем стили радиокнопок*/
+.halls-choice__radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  margin: 0;
+  display: block;
+  width: 250px;
+  height: 55px;
   position: absolute;
-  z-index: -1;
-  opacity: 0;
 }
 
 .halls-choice__label {
@@ -61,27 +67,28 @@ fieldset{
   padding: 7px 15px;
   width: 250px;
   height: 55px;
-  display: flex;   /*выравниваем текст по центру*/
+  display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.halls-choice__label:hover {
-  background-color: #eadeed;
-  border: 3px solid #640AA3;
-  border-radius: 8px;
-}
-
-.halls-choice__radio:focus + .halls-choice__label{
-  background-color: #ffffff;
-  border: 3px solid #640AA3;
-  border-radius: 8px;
 }
 
 .halls-choice__radio:checked + .halls-choice__label{
   border: 3px solid #ffffff;
   background-color: #6c0287;
   color: #ffffff;
+}
+
+.halls-choice__radio:not(:checked):hover + .halls-choice__label {
+  background-color: #eadeed;
+  border: 3px solid #640AA3;
+  border-radius: 8px;
+}
+
+.halls-choice__radio:focus + .halls-choice__label {
+  color: #000000;
+  background-color: #ffffff;
+  border: 3px solid #640AA3;
+  border-radius: 8px;
 }
 
 /*собери набор развлечений*/
@@ -101,74 +108,118 @@ fieldset{
   align-items: flex-start;
 }
 
-.console__label,
-.tabletop-game__label,
-.extra__label {
+.console__label {
   cursor: pointer;
   font-size: 22px;
+  position: relative;
+  padding-left: 39px;
 }
 
-.console__radio {  /*убираем стили радиокнопок*/
+.console__radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  margin: 0;
+  display: block;
+  width: 27px;
+  height: 27px;
   position: absolute;
-  z-index: -1;
+}
+
+.console__radio:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+
+.console__radio:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #6c0287;
+  border: 7px solid #ffffff;
+  border-radius: 100%;
   opacity: 0;
 }
 
-.console__radio + .console__label {  /*выравеиваем в одну линию*/
-  display: inline-flex;
-  align-items: center;
+.console__radio:checked:after {
+  opacity: 1;
 }
 
-.console__label:before {
-  content: '';
-  width: 27px;
-  height: 27px;
-  margin-right: 12px;
-  border-radius: 50%;
-  background-color: #ffffff;
-}
-
-.console__radio:checked + .console__label:before {
-  border: 7px solid #ffffff;
-  background-color: #6c0287;
-}
-
-.console__label:focus:before {
+.console__radio:focus {
   outline: 1px solid #cd06ff;
   outline-offset: 3px;
 }
 
-.tabletop-game__checkbox,  /*убираем стили чекбоксов*/
+.tabletop-game__label,
+.extra__label {
+  cursor: pointer;
+  font-size: 22px;
+  position: relative;
+  padding-left: 37px;
+}
+
+.tabletop-game__checkbox,
 .extra__checkbox {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-
-.tabletop-game__checkbox + .tabletop-game__label, /*выравеиваем в одну линию*/
-.extra__checkbox + .extra__label {
-  display: inline-flex;
-  align-items: center;
-}
-
-.tabletop-game__label:before,
-.extra__label:before {
-  content: '';
-  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  margin: 0;
+  display: block;
   width: 25px;
   height: 25px;
-  margin-right: 12px;
+  position: absolute;
+}
+
+.tabletop-game__checkbox:before,
+.extra__checkbox:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: #ffffff;
 }
 
-.tabletop-game__checkbox:checked + .tabletop-game__label:before,
-.extra__checkbox:checked + .extra__label:before { 
-  border: 7px solid #ffffff;
+.tabletop-game__checkbox:after,
+.extra__checkbox:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: #6c0287;
+  border: 7px solid #ffffff;
+  opacity: 0;
 }
 
-.tabletop-game__label:focus:before,
-.extra__label:focus:before {
+.tabletop-game__checkbox:checked:after,
+.extra__checkbox:checked:after {
+  opacity: 1;
+}
+
+.tabletop-game__checkbox:focus,
+.extra__checkbox:focus {
   outline: 1px solid #cd06ff;
   outline-offset: 3px;
 }
