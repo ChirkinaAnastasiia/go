@@ -159,8 +159,8 @@
         <form  class="reservation__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
   
           <fieldset class="halls-choice">
-            <legend class="halls-choice__title">Выбери зал</legend>
-  
+            <legend class="halls-choice__title">Выбери зал</legend>  
+            
             <input class="halls-choice__radio" type="radio" id="80s-room" name="room" value="80s-vibes">
             <label class="halls-choice__label" for="80s-room" lang="en">80's vibes</label>
   
@@ -178,44 +178,64 @@
             <legend class="amusement-choice__title">Собери набор развлечений</legend>
             <fieldset class="console">
               <legend class="console__title">Приставка:</legend>
-  
-              <input class="console__radio" type="radio" id="ps-console" name="game-console" value="play-station">
-              <label class="console__label" for="ps-console" lang="en">PlayStation</label>
-  
-              <input class="console__radio" type="radio" id="sega-console" name="game-console" value="sega">
-              <label class="console__label" for="sega-console" lang="en">Sega Mega Drive</label>
-  
-              <input class="console__radio" type="radio" id="xbox-console" name="game-console" value="x-box">
-              <label class="console__label" for="xbox-console" lang="en">X-box One S</label>
-  
-              <input class="console__radio" type="radio" id="dendy-console" name="game-console" value="dendy">
-              <label class="console__label" for="dendy-console" lang="en">Dendy</label>
+                
+              <label class="console__label" lang="en">
+                <input class="console__radio" type="radio" name="game-console" value="play-station">
+                PlayStation
+              </label>  
+              
+              <label class="console__label" lang="en">
+                <input class="console__radio" type="radio" name="game-console" value="sega">
+                Sega Mega Drive
+              </label>  
+              
+              <label class="console__label" lang="en">
+                <input class="console__radio" type="radio" name="game-console" value="x-box">
+                X-box One S
+              </label>
+                
+              <label class="console__label" lang="en">
+                <input class="console__radio" type="radio" name="game-console" value="dendy">
+                Dendy
+              </label>
             </fieldset>
   
             <fieldset class="tabletop-game">
               <legend class="tabletop-game__title">Настольные игры:</legend>
-  
-              <input class="tabletop-game__checkbox" type="checkbox" id="jenga-game" name="tabletop-game" value="jenga">
-              <label class="tabletop-game__label" for="jenga-game" lang="en">Jenga</label>
-  
-              <input class="tabletop-game__checkbox" type="checkbox" id="monopoly-game" name="tabletop-game" value="monopoly">
-              <label class="tabletop-game__label" for="monopoly-game" lang="en">Monopoly</label>
-  
-              <input class="tabletop-game__checkbox" type="checkbox" id="munchkin-game" name="tabletop-game" value="munchkin">
-              <label class="tabletop-game__label" for="munchkin-game">Манчкин</label>
-  
-              <input class="tabletop-game__checkbox" type="checkbox" id="alias-game" name="tabletop-game" value="alias">
-              <label class="tabletop-game__label" for="alias-game" lang="en">Alias</label>
+                
+              <label class="tabletop-game__label" lang="en">
+                <input class="tabletop-game__checkbox" type="checkbox" name="tabletop-game" value="jenga">
+                Jenga
+              </label>
+                
+              <label class="tabletop-game__label" lang="en">
+                <input class="tabletop-game__checkbox" type="checkbox" name="tabletop-game" value="monopoly">
+                Monopoly
+              </label>
+                
+              <label class="tabletop-game__label">
+                <input class="tabletop-game__checkbox" type="checkbox" name="tabletop-game" value="munchkin">
+                Манчкин
+              </label>
+                
+              <label class="tabletop-game__label" lang="en">
+                <input class="tabletop-game__checkbox" type="checkbox" name="tabletop-game" value="alias">
+                Alias
+              </label>
             </fieldset>
   
             <fieldset class="extra">
               <legend class="extra__title">Дополнительно:</legend>
-  
-              <input class="extra__checkbox" type="checkbox" id="karaoke-extra" name="extra" value="karaoke">
-              <label class="extra__label" for="karaoke-extra">Караоке</label>
-  
-              <input class="extra__checkbox" type="checkbox" id="vr-extra" name="extra" value="vr">
-              <label class="extra__label" for="vr-extra" lang="en">VR</label>
+                
+              <label class="extra__label">
+                <input class="extra__checkbox" type="checkbox" name="extra" value="karaoke">
+                Караоке
+              </label>
+                
+              <label class="extra__label" lang="en">
+                <input class="extra__checkbox" type="checkbox" name="extra" value="vr">
+                VR
+              </label>
             </fieldset>
           </fieldset>
   

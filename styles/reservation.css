@@ -48,12 +48,6 @@ fieldset{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  cursor: pointer;
-  margin: 0;
-  display: block;
-  width: 250px;
-  height: 55px;
-  position: absolute;
 }
 
 .halls-choice__label {
@@ -68,28 +62,23 @@ fieldset{
   padding: 7px 15px;
   width: 250px;
   height: 55px;
-  display: flex; /*выравниваем текст внутри кнопки*/
+  display: flex; 
   align-items: center;
   justify-content: center;
 }
 
-.halls-choice__radio:checked + .halls-choice__label{
-  border: 3px solid #ffffff;
-  background-color: #6c0287;
-  color: #ffffff;
-}
-
-.halls-choice__radio:not(:checked):hover + .halls-choice__label {
+.halls-choice__label:hover {
   background-color: #eadeed;
   border: 3px solid #640AA3;
   border-radius: 8px;
   transition: 0.2s;
 }
 
-.halls-choice__radio:focus {
-  background-color: #ffffff;
-  border: 3px solid #640AA3;
-  border-radius: 8px;
+.halls-choice__radio:checked + .halls-choice__label{
+  border: 3px solid #ffffff;
+  background-color: #6c0287;
+  color: #ffffff;
+  transition: 0.2s;
 }
 
 /*собери набор развлечений*/
@@ -111,9 +100,9 @@ fieldset{
 
 .console__label {
   cursor: pointer;
+  padding-left: 39px;
   font-size: 22px;
   position: relative;
-  padding-left: 39px;
 }
 
 .console__radio {
@@ -126,6 +115,9 @@ fieldset{
   width: 27px;
   height: 27px;
   position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .console__radio:before {
@@ -150,9 +142,9 @@ fieldset{
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #6c0287;
-  border: 7px solid #ffffff;
-  border-radius: 100%;
+  background-color: transparent;
+  outline: 1px solid #cd06ff;
+  outline-offset: 3px;
   opacity: 0;
 }
 
@@ -160,17 +152,12 @@ fieldset{
   opacity: 1;
 }
 
-.console__radio:focus {
-  outline: 1px solid #cd06ff;
-  outline-offset: 3px;
-}
-
 .tabletop-game__label,
 .extra__label {
   cursor: pointer;
+  padding-left: 37px;
   font-size: 22px;
   position: relative;
-  padding-left: 37px;
 }
 
 .tabletop-game__checkbox,
@@ -184,6 +171,9 @@ fieldset{
   width: 25px;
   height: 25px;
   position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .tabletop-game__checkbox:before,
@@ -209,20 +199,15 @@ fieldset{
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #6c0287;
-  border: 7px solid #ffffff;
+  background-color: transparent;
+  outline: 1px solid #cd06ff;
+  outline-offset: 3px;
   opacity: 0;
 }
 
 .tabletop-game__checkbox:checked:after,
 .extra__checkbox:checked:after {
   opacity: 1;
-}
-
-.tabletop-game__checkbox:focus,
-.extra__checkbox:focus {
-  outline: 1px solid #cd06ff;
-  outline-offset: 3px;
 }
 
 /*выбери дату и время*/
@@ -256,12 +241,22 @@ fieldset{
   background-color: #ffffff;
 }
 
+.date-choice__date__date-input:focus {
+  outline: none;
+  border: 2px solid #CD06FF;
+}
+
 .date-choice__date__time-input {
   border: none;
   width: 134px;
   height: 52px;
   padding: 12px 20px;
   background-color: #ffffff;
+}
+
+.date-choice__date__time-input:focus {
+  outline: none;
+  border: 2px solid #CD06FF;
 }
 
 .date-choice__date__label {
@@ -291,6 +286,11 @@ fieldset{
   height: 52px;
 }
 
+.date-choice__date__select:focus {
+  outline: none;
+  border: 2px solid #CD06FF;
+}
+
 /*блок:имя, фамилия*/
 .date-choice__name {
   max-width: 280px;
@@ -314,6 +314,11 @@ fieldset{
   height: 52px;
   border: none;
   background-color: #ffffff;
+}
+
+.date-choice__name__input:focus {
+  outline: none;
+  border: 2px solid #CD06FF;
 }
 
 /*блок: телефон, e-mail*/
@@ -341,6 +346,11 @@ fieldset{
   background-color: #ffffff;
 }
 
+.date-choice__contacts__input:focus {
+  outline: none;
+  border: 2px solid #CD06FF;
+}
+
 /*кнопка: забронировать*/
 .reservation__form__button {
   display: block;
@@ -356,4 +366,18 @@ fieldset{
   line-height: 28px;
   font-weight: 700;
   font-size: 22px;
+}
+
+.reservation__form__button:hover {
+  background: #eadeed;
+  border: 3px solid #6c0287;
+}
+
+.reservation__form__button:active {
+  background: #EADEED;
+}
+
+.reservation__form__button:focus {
+  outline: none;
+  border: 3px solid #6C0287;
 }
