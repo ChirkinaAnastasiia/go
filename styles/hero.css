@@ -81,6 +81,20 @@
   filter: drop-shadow(0px 0px 10px rgba(108, 2, 135, 1));
 }
 
+.content__button:hover,
+.content__button:focus {
+  border: none;
+  outline: none;
+  background-color: #840aa3;
+  filter: drop-shadow(0px 0px 10px rgba(132, 10, 164, 1));
+}
+
+.content__button:active {
+  border: none;
+  background-color: #640aa3;
+  filter: drop-shadow(0px 0px 10px rgba(100, 10, 163, 1));
+}
+
 .hero__down-button {
   border: none;
   background-color: transparent;
@@ -89,10 +103,39 @@
   left: 50%;
   transform: translate(-50%);
   z-index: 1;
+  display: block;
+  width: 97px;
+  height: 97px;
   /*
   зафиксировать кнопку "вниз"
   top: 782px;
   position: fixed;
   */
 }
+
+.hero__down-button:hover > svg {
+  fill: #ffffff;
+}
+
+.hero__down-button:hover > svg > rect{
+  fill: #6c0287;
+}
+
+.hero__down-button:focus {
+  outline: 1px solid #cd06ff;
+  outline-offset: 1px;
+}
+
+.hero__down-button:active > svg {
+  fill: #cd06ff;
+}
+
+.hero__down-button:active > svg > circle {
+  stroke: #cd06ff;
+}
+
+.hero__down-button:active > svg > rect{
+  fill: #ffffff;
+}
+
 

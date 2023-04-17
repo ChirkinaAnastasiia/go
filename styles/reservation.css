@@ -71,14 +71,12 @@ fieldset{
   background-color: #eadeed;
   border: 3px solid #640AA3;
   border-radius: 8px;
-  transition: 0.2s;
 }
 
 .halls-choice__radio:checked + .halls-choice__label{
   border: 3px solid #ffffff;
   background-color: #6c0287;
   color: #ffffff;
-  transition: 0.2s;
 }
 
 .halls-choice__radio:focus-visible + .halls-choice__label{
@@ -159,7 +157,7 @@ fieldset{
   opacity: 1;
 }
 
-.console__radio:focus-visible {
+.console__radio:focus {
   outline: 1px solid #cd06ff;
   outline-offset: 3px;
 }
@@ -222,8 +220,8 @@ fieldset{
   opacity: 1;
 }
 
-.tabletop-game__checkbox:focus-visible,
-.extra__checkbox:focus-visible {
+.tabletop-game__checkbox:focus,
+.extra__checkbox:focus {
   outline: 1px solid #cd06ff;
   outline-offset: 3px;
 }
@@ -252,6 +250,7 @@ fieldset{
 }
 
 .date-choice__date__date-input {
+  cursor: pointer;
   border: none;
   width: 134px;
   height: 52px;
@@ -265,6 +264,7 @@ fieldset{
 }
 
 .date-choice__date__time-input {
+  cursor: pointer;
   border: none;
   width: 134px;
   height: 52px;
@@ -296,6 +296,7 @@ fieldset{
 }
 
 .date-choice__date__select {
+  cursor: pointer;
   padding: 12px 20px;
   appearance: none;
   border: none;

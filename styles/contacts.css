@@ -1,5 +1,5 @@
 .footer {
-  background-image: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+  background-image: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
 }
 
 .footer__title {
@@ -49,6 +49,19 @@
   color: #ffffff;
 }
 
+.address__link:hover {
+  color: #6c0287;
+}
+
+.address__link:active {
+  color: #640aa3;
+}
+
+.address__link:focus-visible {
+  outline: 1px solid #cd06ff;
+  outline-offset: 3px;
+}
+
 .address__email {
   padding-left: 60px;
   margin-bottom: 39px;
@@ -66,8 +79,56 @@
 }
 
 .social__link {
+  display: block;
+  width: 50px;
+  height: 50px;
   color: #ffffff;
+  outline: 1px solid transparent;
+  outline-offset: 3px;
+  transition-property: color, outline-color;
+  transition-duration: 0.3s, 0.2s;
+  transition-timing-function: ease-in-out;
 }
+
+.social__link:hover {
+  color: #eadeed;
+}
+
+.social__link:focus {
+  color: #eadeed;
+  outline-color: #cd06ff;
+}
+
+.social__link:active {
+  color: #cd06ff;
+}
+
+/*
+.social__link {
+  display: block;
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+  outline: 1px solid transparent;
+  outline-offset: 3px;
+  border-radius: 100%;
+  transition-property: color, outline-color;
+  transition-duration: 0.3s, 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.social__link:hover {
+  color: #cd06ff;
+}
+
+.social__link:focus {
+  outline-color: #cd06ff;
+}
+
+.social__link:active {
+  color: #840aa3;
+}
+*/
 
 .copy {
   width: 1180px;

@@ -13,6 +13,17 @@
   align-items: center;
 }
 
+.header__logo-link {
+  display: block;
+  width: 120px;
+  height: 66px;
+}
+
+.header__logo-link:focus-visible {
+  outline: 1px solid #cd06ff;
+  outline-offset: 3px;
+}
+
 .navigation__list {
   display: flex;
   flex-direction: row;
@@ -23,6 +34,19 @@
   text-transform: uppercase;
   line-height: 50px;
   font-size: 22px;
+}
+
+.navigation__link:hover {
+  color: #6c0287;
+}
+
+.navigation__link:active {
+  color: #640aa3;
+}
+
+.navigation__link:focus-visible {
+  outline: 1px solid #cd06ff;
+  outline-offset: 3px;
 }
 
 .header__button {
@@ -40,4 +64,16 @@
   font-size: 22px;
   color: #ffffff;
   background-color: transparent;
+}
+
+.header__button:hover,
+.header__button:focus {
+  border: none;
+  outline: none;
+  background-color: #6c0287;
+}
+
+.header__button:active {
+  border: none;
+  background-color: #640aa3;
 }
