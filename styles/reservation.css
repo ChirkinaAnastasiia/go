@@ -21,7 +21,7 @@ fieldset{
 .halls-choice__title,
 .amusement-choice__title,
 .date-choice__title {
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
   text-align: center;
   line-height: 28px;
   font-size: 24px;
@@ -69,22 +69,27 @@ fieldset{
 
 .halls-choice__label:hover {
   background-color: #eadeed;
-  border: 3px solid #640AA3;
+  outline: 3px solid #640AA3;
   border-radius: 8px;
 }
 
-.halls-choice__radio:checked + .halls-choice__label{
-  border: 3px solid #ffffff;
+.halls-choice__radio:checked + .halls-choice__label {
+  outline: 3px solid #ffffff;
   background-color: #6c0287;
   color: #ffffff;
 }
 
-.halls-choice__radio:focus-visible + .halls-choice__label{
+/* .halls-choice__radio:focus + .halls-choice__label {
   background-color: #ffffff;
-  border: 3px solid #640AA3;
+  outline: 3px solid #640AA3;
   border-radius: 8px;
   color: #000000;
-}
+} */
+
+.halls-choice__radio:focus-visible {
+  outline: none !important;
+  border: none !important;
+} 
 
 /*собери набор развлечений*/
 .amusement-choice {
@@ -147,9 +152,9 @@ fieldset{
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: transparent;
-  outline: 1px solid #cd06ff;
-  outline-offset: 3px;
+  border-radius: 100%;
+  border: 7px solid #ffffff;
+  background-color: #6c0287;
   opacity: 0;
 }
 
@@ -160,6 +165,7 @@ fieldset{
 .console__radio:focus {
   outline: 1px solid #cd06ff;
   outline-offset: 3px;
+  border-radius: 100%;
 }
 
 .tabletop-game__label,
@@ -209,9 +215,8 @@ fieldset{
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: transparent;
-  outline: 1px solid #cd06ff;
-  outline-offset: 3px;
+  border: 7px solid #ffffff;
+  background-color: #6c0287;
   opacity: 0;
 }
 
@@ -259,8 +264,7 @@ fieldset{
 }
 
 .date-choice__date__date-input:focus {
-  outline: none;
-  border: 2px solid #CD06FF;
+  outline: 2px solid #CD06FF;;
 }
 
 .date-choice__date__time-input {
@@ -273,8 +277,7 @@ fieldset{
 }
 
 .date-choice__date__time-input:focus {
-  outline: none;
-  border: 2px solid #CD06FF;
+  outline: 2px solid #CD06FF;
 }
 
 .date-choice__date__label {
@@ -306,8 +309,7 @@ fieldset{
 }
 
 .date-choice__date__select:focus {
-  outline: none;
-  border: 2px solid #CD06FF;
+  outline: 2px solid #CD06FF;
 }
 
 /*блок:имя, фамилия*/
@@ -336,8 +338,7 @@ fieldset{
 }
 
 .date-choice__name__input:focus {
-  outline: none;
-  border: 2px solid #CD06FF;
+  outline: 2px solid #CD06FF;
 }
 
 /*блок: телефон, e-mail*/
@@ -366,8 +367,7 @@ fieldset{
 }
 
 .date-choice__contacts__input:focus {
-  outline: none;
-  border: 2px solid #CD06FF;
+  outline: 2px solid #CD06FF;
 }
 
 /*кнопка: забронировать*/
@@ -389,7 +389,7 @@ fieldset{
 
 .reservation__form__button:hover {
   background: #eadeed;
-  border: 3px solid #6c0287;
+  outline: 3px solid #6c0287;
 }
 
 .reservation__form__button:active {
@@ -397,6 +397,5 @@ fieldset{
 }
 
 .reservation__form__button:focus {
-  outline: none;
-  border: 3px solid #6C0287;
+  outline: 3px solid #6C0287;
 }
