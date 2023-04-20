@@ -28,12 +28,15 @@
   display: flex;
   flex-direction: row;
   gap: 40px;
-}
-
-.navigation__list {
   text-transform: uppercase;
   line-height: 50px;
   font-size: 22px;
+}
+
+.navigation__link {
+  transition-property: color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
 }
 
 .navigation__link:hover {
@@ -65,12 +68,15 @@
   font-size: 22px;
   color: #ffffff;
   background-color: transparent;
+  transition-property: outline, background-color;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
 }
 
 .header__button:hover,
 .header__button:focus {
   border: none;
-  outline: none;
+  outline-color: transparent;
   background-color: #6c0287;
 }
 

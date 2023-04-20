@@ -47,6 +47,9 @@
 .address__link {
   text-decoration: none;
   color: #ffffff;
+  transition-property: color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
 }
 
 .address__link:hover {
@@ -86,7 +89,7 @@
   outline: 1px solid transparent;
   outline-offset: 3px;
   transition-property: color, outline-color;
-  transition-duration: 0.3s, 0.2s;
+  transition-duration: .3s, .2s;
   transition-timing-function: ease-in-out;
 }
 
@@ -113,7 +116,7 @@
   outline-offset: 3px;
   border-radius: 100%;
   transition-property: color, outline-color;
-  transition-duration: 0.3s, 0.2s;
+  transition-duration: .3s, .2s;
   transition-timing-function: ease-in-out;
 }
 

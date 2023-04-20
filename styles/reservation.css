@@ -65,12 +65,14 @@ fieldset{
   display: flex; 
   align-items: center;
   justify-content: center;
+  transition-property: color, background-color, outline;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
 }
 
 .halls-choice__label:hover {
   background-color: #eadeed;
   outline: 3px solid #640AA3;
-  border-radius: 8px;
 }
 
 .halls-choice__radio:checked + .halls-choice__label {
@@ -79,12 +81,12 @@ fieldset{
   color: #ffffff;
 }
 
-/* .halls-choice__radio:focus + .halls-choice__label {
+.halls-choice__radio:focus + .halls-choice__label {
   background-color: #ffffff;
   outline: 3px solid #640AA3;
   border-radius: 8px;
   color: #000000;
-} */
+}
 
 .halls-choice__radio:focus-visible {
   outline: none !important;
@@ -127,7 +129,13 @@ fieldset{
   position: absolute;
   left: 0;
   top: 50%;
+  outline: 1px solid transparent;
+  outline-offset: 3px;
+  border-radius: 100%;
   transform: translateY(-50%);
+  transition-property: outline;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
 }
 
 .console__radio:before {
@@ -189,7 +197,12 @@ fieldset{
   position: absolute;
   left: 0;
   top: 50%;
+  outline: 1px solid transparent;
+  outline-offset: 3px;
   transform: translateY(-50%);
+  transition-property: outline;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
 }
 
 .tabletop-game__checkbox:before,
@@ -261,6 +274,9 @@ fieldset{
   height: 52px;
   padding: 12px 20px;
   background-color: #ffffff;
+  transition-property: outline;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
 }
 
 .date-choice__date__date-input:focus {
@@ -274,6 +290,9 @@ fieldset{
   height: 52px;
   padding: 12px 20px;
   background-color: #ffffff;
+  transition-property: outline;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
 }
 
 .date-choice__date__time-input:focus {
@@ -306,6 +325,9 @@ fieldset{
   background-color: inherit;
   width: 300px;
   height: 52px;
+  transition-property: outline;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
 }
 
 .date-choice__date__select:focus {
@@ -335,6 +357,9 @@ fieldset{
   height: 52px;
   border: none;
   background-color: #ffffff;
+  transition-property: outline;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
 }
 
 .date-choice__name__input:focus {
@@ -364,6 +389,9 @@ fieldset{
   height: 52px;
   border: none;
   background-color: #ffffff;
+  transition-property: outline;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
 }
 
 .date-choice__contacts__input:focus {
@@ -385,15 +413,18 @@ fieldset{
   line-height: 28px;
   font-weight: 700;
   font-size: 22px;
+  transition-property: background-color, outline;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
 }
 
 .reservation__form__button:hover {
-  background: #eadeed;
+  background-color: #eadeed;
   outline: 3px solid #6c0287;
 }
 
 .reservation__form__button:active {
-  background: #EADEED;
+  background-color: #EADEED;
 }
 
 .reservation__form__button:focus {

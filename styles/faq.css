@@ -32,6 +32,13 @@
   font-size: 24px;
 }
 
+svg {
+  border-radius: 100%;
+  transition-property: background-color, fill, stroke;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
+}
+
 /* фон, текст каждой второй кнопки */
 .faq__item:nth-child(even) .faq__button {
   background-color: #440f51;
