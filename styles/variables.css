@@ -1,0 +1,67 @@
+:root {
+  --bg-color: #1b1a1b;
+  --text-color: #ffffff;
+}
+
+.header {
+  --hover-color: #6c0287;
+  --active-color: #640aa3;
+  --outline-color: #cd06ff;
+}
+
+.hero {
+  --text-decoration-color: #cd06ff;
+  --button-color: #6c0287;
+  --button-hover-color: #840aa3;
+  --button-active-color: #640aa3;
+  --down-color: #ffffff;
+  --down-hover-color: #6c0287;
+  --down-active-color: #cd06ff;
+}
+
+.halls {
+  --focus-color: #cd06ff;
+}
+
+.reservation {
+  --bg-color: #440f51;
+  /* радиокнопки*/
+  --radio-color: #ffffff;
+  --radio-text-color: #1b1a1b;
+  --radio-hover-color: #eadeed;
+  --radio-hover-outline-color: #640aa3;
+  --radio-checked-color: #6c0287;
+  --radio-checked-outline-color: #ffffff;
+  /*радио, чекбоксы*/
+  --checkbox-color: #ffffff;
+  --checkbox-checked-color: #6c0287;
+  --checkbox-outline-color: #cd06ff;
+  /*поля ввода*/
+  --focus-color: #cd06ff;
+  --input-color: #ffffff;
+  /*кнопка*/
+  --button-color: #ffffff;
+  --button-text-color: #6c0287;
+  --button-state-color: #eadeed;
+  --button-state-outline-color: #6c0287;
+}
+
+.about {
+  --quote-color: #6c0287;
+}
+
+.faq {
+  --text-dark-color: #1c1a1a;
+  --focus-color: #cd06ff;
+  --button-color: #ffffff;
+  --button-dark-color: #440f51;
+  --plus-color: #ffffff;
+  --plus-dark-color: #6c0287;
+}
+
+.contacts {
+  --focus-color: #cd06ff;
+  --link-hover-color: #6c0287;
+  --link-active-color: #640aa3;
+  --icon-hover-color: #eadeed;
+}

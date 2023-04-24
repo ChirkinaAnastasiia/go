@@ -15,12 +15,20 @@
   justify-content: space-between;
 }
 
+.rest__item:nth-child(2) {
+  margin-top: 70px;
+}
+
+.rest__item:nth-child(2n+4) {
+  margin-top: -70px;
+}
+
 .figure {
   display: flex;
   width: 380px;
   height: 228px;
   position: relative;
-  transition-property: transform;
+  transition-property: transform, filter;
   transition-duration: .8s;
   transition-timing-function: ease-in-out;
 }
@@ -38,3 +46,4 @@
   transform: scale(1.1);
   filter: drop-shadow(0px 0px 8px rgb(126, 17, 204));
 }
+

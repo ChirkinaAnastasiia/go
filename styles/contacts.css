@@ -46,22 +46,22 @@
 
 .address__link {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--text-color, #ffffff);
   transition-property: color;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
 }
 
 .address__link:hover {
-  color: #6c0287;
+  color: var(--link-hover-color, #6c0287);
 }
 
 .address__link:active {
-  color: #640aa3;
+  color: var(--link-active-color, #640aa3);
 }
 
 .address__link:focus-visible {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--focus-color, #cd06ff);
   outline-offset: 3px;
 }
 
@@ -85,7 +85,7 @@
   display: block;
   width: 50px;
   height: 50px;
-  color: #ffffff;
+  color: var(--text-color, #ffffff);
   outline: 1px solid transparent;
   outline-offset: 3px;
   transition-property: color, outline-color;
@@ -94,16 +94,16 @@
 }
 
 .social__link:hover {
-  color: #eadeed;
+  color: var(--icon-hover-color, #eadeed);
 }
 
 .social__link:focus {
-  color: #eadeed;
-  outline-color: #cd06ff;
+  color: var(--icon-hover-color, #eadeed);
+  outline-color: var(--focus-color, #cd06ff);
 }
 
 .social__link:active {
-  color: #cd06ff;
+  color: var(--focus-color, #cd06ff);
 }
 
 /*
@@ -121,11 +121,11 @@
 }
 
 .social__link:hover {
-  color: #cd06ff;
+  color: var(--focus-color, #cd06ff);
 }
 
 .social__link:focus {
-  outline-color: #cd06ff;
+  outline-color: var(--focus-color, #cd06ff);
 }
 
 .social__link:active {

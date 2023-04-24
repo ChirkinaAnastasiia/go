@@ -27,9 +27,22 @@
 }
 
 .feedback__author {
-  display: inline-block;
-  width: 280px;
   margin-right: 20px;
+  width: 280px;
+  display: inline-block;
+  position: relative;
+}
+
+.feedback__author:after {
+  content: "";
+  width: 280px;
+  height: 280px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
+  border-radius: 100%;
 }
 
 .author__image {

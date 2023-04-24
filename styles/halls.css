@@ -36,7 +36,7 @@
 }
 
 .card__link:focus-visible {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--focus-color, #cd06ff);
   outline-offset: 3px;
 }
 
@@ -46,7 +46,7 @@
   text-align: center;
   font-weight: 700;
   font-size: 70px;
-  color: #fff;
+  color: var(--text-color, #ffffff);
   position: absolute;
   top: 50%;
   left: 50%;

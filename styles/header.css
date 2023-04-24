@@ -1,5 +1,5 @@
 .header {
-  background-color: #1b1a1b;
+  background-color: var(--bg-color, #1b1a1b);
   position: sticky;
   left: 50%;
   transform: translateY(-50%);
@@ -20,7 +20,7 @@
 }
 
 .header__logo-link:focus-visible {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--outline-color, #cd06ff);
   outline-offset: 3px;
 }
 
@@ -40,15 +40,15 @@
 }
 
 .navigation__link:hover {
-  color: #6c0287;
+  color: var(--hover-color, #6c0287);
 }
 
 .navigation__link:active {
-  color: #640aa3;
+  color: var(--active-color, #640aa3);
 }
 
 .navigation__link:focus-visible {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--outline-color, #cd06ff);
   outline-offset: 3px;
 }
 
@@ -57,7 +57,7 @@
   align-items: center;
   padding: 12px 32px;
   border: none;
-  outline: 3px solid #CD06FF;
+  outline: 3px solid var(--outline-color, #cd06ff);
   border-radius: 10px;
   width: 280px;
   height: 55px;
@@ -66,7 +66,7 @@
   line-height: 30px;
   font-weight: 700;
   font-size: 22px;
-  color: #ffffff;
+  color: var(--text-color, #ffffff);
   background-color: transparent;
   transition-property: outline, background-color;
   transition-duration: .4s;
@@ -77,10 +77,10 @@
 .header__button:focus {
   border: none;
   outline-color: transparent;
-  background-color: #6c0287;
+  background-color: var(--hover-color, #6c0287);
 }
 
 .header__button:active {
   border: none;
-  background-color: #640aa3;
+  background-color: var(--active-color, #640aa3);
 }

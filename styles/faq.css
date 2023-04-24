@@ -25,8 +25,8 @@
   height: 87px;
   padding: 20px 70px;
   border: none;
-  background-color: #ffffff;
-  color: #1c1a1a;
+  background-color: var(--button-color, #ffffff);
+  color: var(--text-dark-color, #1c1a1a);
   text-align: left;
   font-weight: 700;
   font-size: 24px;
@@ -41,44 +41,44 @@ svg {
 
 /* фон, текст каждой второй кнопки */
 .faq__item:nth-child(even) .faq__button {
-  background-color: #440f51;
-  color: #ffffff;
+  background-color: var(--button-dark-color, #440f51);
+  color: var(--text-color, #ffffff);
 }
 
 /* иконка usual */
 .faq__item:nth-child(even) .faq__button > svg > path {
-  fill: #ffffff;
+  fill: var(--plus-color, #ffffff);
 }
 
 .faq__item:nth-child(even) .faq__button > svg > circle {
-  stroke: #ffffff;
+  stroke: var(--plus-color, #ffffff);
 }
 
 .faq__button:nth-child(odd) > svg > path {
-  fill: #6c0287;
+  fill: var(--plus-dark-color, #6c0287);
 }
 
 .faq__button:nth-child(odd) > svg > circle {
-  stroke: #6c0287;
+  stroke: var(--plus-dark-color, #6c0287);
 }
 
 /*  иконка hover */
 .faq__item:nth-child(even) .faq__button:hover > svg {
-  background-color: #ffffff;
+  background-color: var(--plus-color, #ffffff);
   border-radius: 100%;
 }
 
 .faq__item:nth-child(even) .faq__button:hover > svg > path {
-  fill: #6c0287;
+  fill: var(--plus-dark-color, #6c0287);
 }
 
 .faq__button:hover:nth-child(odd) > svg {
-  background-color: #6c0287;
+  background-color: var(--plus-dark-color, #6c0287);
   border-radius: 100%;
 }
 
 .faq__button:hover:nth-child(odd) > svg > path {
-  fill: #ffffff;
+  fill: var(--plus-color, #ffffff);
 }
 
 /* иконка active */
@@ -91,7 +91,7 @@ svg {
 }
 
 .faq__item:nth-child(even) .faq__button:active > svg > path {
-  fill: #ffffff;
+  fill: var(--plus-color, #ffffff);
 }
 
 .faq__button:active:nth-child(odd) > svg {
@@ -103,11 +103,11 @@ svg {
 }
 
 .faq__button:active:nth-child(odd) > svg > path {
-  fill: #370a37;
+  fill: var(--plus-dark-color, #6c0287);
 }
 
 /* кнопка focus-visible */
 .faq__button:focus-visible {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--focus-color, #cd06ff);
   outline-offset: 3px;
 }

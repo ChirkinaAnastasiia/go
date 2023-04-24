@@ -44,7 +44,7 @@
   content: "\201c";
   font-weight: 900;
   font-size: 44px;
-  color: #6C0287;
+  color: var(--quote-color, #6c0287);
   position: absolute;
   left: -30px;
   top: -15px;
@@ -54,7 +54,7 @@
   content: "\201d";
   font-weight: 900;
   font-size: 44px;
-  color: #6C0287;
+  color: var(--quote-color, #6c0287);
   position: absolute;
   right: 20px;
   bottom: 0;

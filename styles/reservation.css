@@ -1,6 +1,6 @@
 .reservation {
   padding: 80px 0;
-  background-color: #440f51;
+  background-color: var(--bg-color, #440f51);
 }
 
 fieldset{
@@ -56,8 +56,8 @@ fieldset{
   line-height: 40px;
   font-weight: 700;
   font-size: 30px;
-  color: #000000;
-  background-color: #ffffff;
+  color: var(--radio-text-color, #1b1a1b);
+  background-color: var(--radio-color, #ffffff);
   border-radius: 8px;
   padding: 7px 15px;
   width: 250px;
@@ -71,24 +71,24 @@ fieldset{
 }
 
 .halls-choice__label:hover {
-  background-color: #eadeed;
-  outline: 3px solid #640AA3;
+  background-color: var(--radio-hover-color, #eadeed);
+  outline: 3px solid var(--radio-hover-outline-color, #640aa3);
 }
 
 .halls-choice__radio:checked + .halls-choice__label {
-  outline: 3px solid #ffffff;
-  background-color: #6c0287;
-  color: #ffffff;
+  outline: 3px solid var(--radio-checked-outline-color, #ffffff);
+  background-color: var(--radio-checked-color, #6c0287);
+  color: var(--text-color, #ffffff);
 }
 
 .halls-choice__radio:focus + .halls-choice__label {
-  background-color: #ffffff;
-  outline: 3px solid #640AA3;
+  background-color: var(--radio-color, #ffffff);
+  outline: 3px solid var(--radio-hover-outline-color, #640aa3);
   border-radius: 8px;
-  color: #000000;
+  color: var(--radio-text-color, #1b1a1b);
 }
 
-.halls-choice__radio:focus-visible {
+.halls-choice__radio:focus-visible {  /* чтобы в Mozilla не отображались точки при focus-visible */
   outline: none !important;
   border: none !important;
 } 
@@ -147,7 +147,7 @@ fieldset{
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #ffffff;
+  background-color: var(--checkbox-color, #ffffff);
   border-radius: 100%;
 }
 
@@ -161,8 +161,8 @@ fieldset{
   top: 50%;
   transform: translateY(-50%);
   border-radius: 100%;
-  border: 7px solid #ffffff;
-  background-color: #6c0287;
+  border: 7px solid var(--checkbox-color, #ffffff);
+  background-color: var(--checkbox-checked-color, #6c0287);
   opacity: 0;
 }
 
@@ -171,7 +171,7 @@ fieldset{
 }
 
 .console__radio:focus {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--checkbox-outline-color, #cd06ff);
   outline-offset: 3px;
   border-radius: 100%;
 }
@@ -215,7 +215,7 @@ fieldset{
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #ffffff;
+  background-color: var(--checkbox-color, #ffffff);
 }
 
 .tabletop-game__checkbox:after,
@@ -228,8 +228,8 @@ fieldset{
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  border: 7px solid #ffffff;
-  background-color: #6c0287;
+  border: 7px solid var(--checkbox-color, #ffffff);
+  background-color: var(--checkbox-checked-color, #6c0287);
   opacity: 0;
 }
 
@@ -240,7 +240,7 @@ fieldset{
 
 .tabletop-game__checkbox:focus,
 .extra__checkbox:focus {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--checkbox-outline-color, #cd06ff);
   outline-offset: 3px;
 }
 
@@ -273,14 +273,14 @@ fieldset{
   width: 134px;
   height: 52px;
   padding: 12px 20px;
-  background-color: #ffffff;
+  background-color: var(--input-color, #ffffff);
   transition-property: outline;
   transition-duration: .2s;
   transition-timing-function: ease-in-out;
 }
 
 .date-choice__date__date-input:focus {
-  outline: 2px solid #CD06FF;;
+  outline: 2px solid var(--focus-color, #cd06ff);
 }
 
 .date-choice__date__time-input {
@@ -289,19 +289,19 @@ fieldset{
   width: 134px;
   height: 52px;
   padding: 12px 20px;
-  background-color: #ffffff;
+  background-color: var(--input-color, #ffffff);
   transition-property: outline;
   transition-duration: .2s;
   transition-timing-function: ease-in-out;
 }
 
 .date-choice__date__time-input:focus {
-  outline: 2px solid #CD06FF;
+  outline: 2px solid var(--focus-color, #cd06ff);
 }
 
 .date-choice__date__label {
   position: relative;
-  background-color: #ffffff;
+  background-color: var(--input-color, #ffffff);
 }
 
 .date-choice__date__label:after {
@@ -331,7 +331,7 @@ fieldset{
 }
 
 .date-choice__date__select:focus {
-  outline: 2px solid #CD06FF;
+  outline: 2px solid var(--focus-color, #cd06ff);
 }
 
 /*блок:имя, фамилия*/
@@ -356,14 +356,14 @@ fieldset{
   width: 280px;
   height: 52px;
   border: none;
-  background-color: #ffffff;
+  background-color: var(--input-color, #ffffff);
   transition-property: outline;
   transition-duration: .2s;
   transition-timing-function: ease-in-out;
 }
 
 .date-choice__name__input:focus {
-  outline: 2px solid #CD06FF;
+  outline: 2px solid var(--focus-color, #cd06ff);
 }
 
 /*блок: телефон, e-mail*/
@@ -388,14 +388,14 @@ fieldset{
   width: 300px;
   height: 52px;
   border: none;
-  background-color: #ffffff;
+  background-color: var(--input-color, #ffffff);
   transition-property: outline;
   transition-duration: .2s;
   transition-timing-function: ease-in-out;
 }
 
 .date-choice__contacts__input:focus {
-  outline: 2px solid #CD06FF;
+  outline: 2px solid var(--focus-color, #cd06ff);
 }
 
 /*кнопка: забронировать*/
@@ -407,8 +407,8 @@ fieldset{
   height: 60px;
   border: none;
   border-radius: 10px;
-  background-color: #ffffff;
-  color: #6c0287;
+  background-color: var(--button-color, #ffffff);
+  color: var(--button-text-color, #6c0287);
   text-transform: uppercase;
   line-height: 28px;
   font-weight: 700;
@@ -419,14 +419,14 @@ fieldset{
 }
 
 .reservation__form__button:hover {
-  background-color: #eadeed;
-  outline: 3px solid #6c0287;
+  background-color: var(--button-state-color, #eadeed);
+  outline: 3px solid var(--button-state-outline-color, #6c0287);
 }
 
 .reservation__form__button:active {
-  background-color: #EADEED;
+  background-color: var(--button-state-color, #eadeed);
 }
 
 .reservation__form__button:focus {
-  outline: 3px solid #6C0287;
+  outline: 3px solid var(--button-state-outline-color, #6c0287);
 }

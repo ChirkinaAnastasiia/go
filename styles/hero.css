@@ -51,14 +51,14 @@
 }
 
 .content__text_4 {
-  color: #cd06ff;
+  color: var(--text-decoration-color, #cd06ff);
   line-height: 141px;
   font-weight: 900;
   font-size: 100px;
 }
 
 .content__text_new {
-  color: #cd06ff;
+  color: var(--text-decoration-color, #cd06ff);
   line-height: 106px;
   font-weight: 900;
   font-size: 75px;
@@ -76,8 +76,8 @@
   line-height: 30px;
   font-weight: 700;
   font-size: 26px;
-  color: #ffffff;
-  background-color: #6c0287;
+  color: var(--text-color, #ffffff);
+  background-color: var(--button-color, #6c0287);
   filter: drop-shadow(0px 0px 10px rgba(108, 2, 135, 1));
   transition-property: background-color, filter;
   transition-duration: .4s;
@@ -88,13 +88,13 @@
 .content__button:focus {
   border: none;
   outline: none;
-  background-color: #840aa3;
+  background-color: var(--button-hover-color, #840aa3);
   filter: drop-shadow(0px 0px 10px rgba(132, 10, 164, 1));
 }
 
 .content__button:active {
   border: none;
-  background-color: #640aa3;
+  background-color: var(--button-active-color, #640aa3);
   filter: drop-shadow(0px 0px 10px rgba(100, 10, 163, 1));
 }
 
@@ -129,28 +129,28 @@ svg {
 }
 
 .hero__down-button:hover > svg {
-  background-color: #ffffff;
+  background-color: var(--down-color, #ffffff);
 }
 
 .hero__down-button:hover > svg > rect{
-  fill: #6c0287;
+  fill: var(--down-hover-color, #6c0287);
 }
 
 .hero__down-button:focus {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--down-active-color, #cd06ff);
   outline-offset: 1px;
 }
 
 .hero__down-button:active > svg {
-  background-color: #cd06ff;
+  background-color: var(--down-active-color, #cd06ff);
 }
 
 .hero__down-button:active > svg > circle {
-  stroke: #cd06ff;
+  stroke: var(--down-active-color, #cd06ff);
 }
 
 .hero__down-button:active > svg > rect{
-  fill: #ffffff;
+  fill: var(--down-color, #ffffff);
 }
 
 
