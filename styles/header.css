@@ -20,7 +20,7 @@
 }
 
 .header__logo-link:focus-visible {
-  outline: 1px solid var(--outline-color, #cd06ff);
+  outline: 1px solid var(--focus-color, #cd06ff);
   outline-offset: 3px;
 }
 
@@ -35,7 +35,7 @@
 
 .navigation__link {
   transition-property: color;
-  transition-duration: .3s;
+  transition-duration: .4s;
   transition-timing-function: ease-in-out;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .navigation__link:focus-visible {
-  outline: 1px solid var(--outline-color, #cd06ff);
+  outline: 1px solid var(--focus-color, #cd06ff);
   outline-offset: 3px;
 }
 

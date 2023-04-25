@@ -29,6 +29,20 @@
   margin-bottom: 0;
 }
 
+.card .card__title{
+  transition-property: color;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
+}
+
+.card:hover .card__title {
+  color: var(--card-hover-color, #6c0287);
+}
+
+.card:active .card__title {
+  color: var(--card-active-color, #640aa3);
+}
+
 .card__link {
   display: block;
   text-decoration: none;

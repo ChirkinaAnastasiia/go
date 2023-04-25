@@ -1,6 +1,8 @@
 :root {
   --bg-color: #1b1a1b;
   --text-color: #ffffff;
+  --button-color: #ffffff;
+  --focus-color: #cd06ff;
 }
 
 .header {
@@ -20,12 +22,13 @@
 }
 
 .halls {
-  --focus-color: #cd06ff;
+  --card-hover-color: #6c0287;
+  --card-active-color: #640aa3;
 }
 
 .reservation {
   --bg-color: #440f51;
-  /* радиокнопки*/
+  /*радиокнопки*/
   --radio-color: #ffffff;
   --radio-text-color: #1b1a1b;
   --radio-hover-color: #eadeed;
@@ -37,10 +40,8 @@
   --checkbox-checked-color: #6c0287;
   --checkbox-outline-color: #cd06ff;
   /*поля ввода*/
-  --focus-color: #cd06ff;
   --input-color: #ffffff;
   /*кнопка*/
-  --button-color: #ffffff;
   --button-text-color: #6c0287;
   --button-state-color: #eadeed;
   --button-state-outline-color: #6c0287;
@@ -52,15 +53,12 @@
 
 .faq {
   --text-dark-color: #1c1a1a;
-  --focus-color: #cd06ff;
-  --button-color: #ffffff;
   --button-dark-color: #440f51;
   --plus-color: #ffffff;
   --plus-dark-color: #6c0287;
 }
 
 .contacts {
-  --focus-color: #cd06ff;
   --link-hover-color: #6c0287;
   --link-active-color: #640aa3;
   --icon-hover-color: #eadeed;
