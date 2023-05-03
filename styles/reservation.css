@@ -408,25 +408,29 @@ fieldset{
   border: none;
   border-radius: 10px;
   background-color: var(--button-color, #ffffff);
+  filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
   color: var(--button-text-color, #6c0287);
   text-transform: uppercase;
   line-height: 28px;
   font-weight: 700;
   font-size: 22px;
-  transition-property: background-color, outline;
-  transition-duration: .4s;
+  transition-property: background-color, outline, filter;
+  transition-duration: .4s, .2s, .4s;
   transition-timing-function: ease-in-out;
 }
 
 .reservation__form__button:hover {
   background-color: var(--button-state-color, #eadeed);
   outline: 3px solid var(--button-state-outline-color, #6c0287);
+  filter: none;
 }
 
 .reservation__form__button:active {
   background-color: var(--button-state-color, #eadeed);
+  filter: none;
 }
 
 .reservation__form__button:focus {
   outline: 3px solid var(--button-state-outline-color, #6c0287);
+  filter: none;
 }
