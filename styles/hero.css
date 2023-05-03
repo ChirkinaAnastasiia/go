@@ -79,7 +79,7 @@
   font-size: 26px;
   color: var(--text-color, #ffffff);
   background-color: var(--button-color, #6c0287);
-  filter: drop-shadow(0px 0px 10px rgba(108, 2, 135, 1));
+  filter: drop-shadow(0px 0px 10px rgba(108, 2, 135));
   transition-property: background-color, filter;
   transition-duration: .4s;
   transition-timing-function: ease-in-out;
@@ -90,13 +90,13 @@
   border: none;
   outline: none;
   background-color: var(--button-hover-color, #840aa3);
-  filter: drop-shadow(0px 0px 10px rgba(132, 10, 164, 1));
+  filter: drop-shadow(0px 0px 10px rgba(132, 10, 164));
 }
 
 .content__button:active {
   border: none;
   background-color: var(--button-active-color, #640aa3);
-  filter: drop-shadow(0px 0px 10px rgba(100, 10, 163, 1));
+  filter: drop-shadow(0px 0px 10px rgba(100, 10, 163));
 }
 
 .hero__down-button {

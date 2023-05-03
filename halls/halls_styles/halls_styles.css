@@ -1,0 +1,113 @@
+@import "../../styles/normalize.css";
+@import "../../styles/global.css";
+@import "../../styles/variables.css";
+@import "../../styles/header.css";
+/* @import "./halls.css"; */
+@import "../../styles/contacts.css";
+
+
+
+
+
+.header {
+  top: 100px;
+  padding-bottom: 20px;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.header__back-link {
+  display: inline-block;
+  align-self: flex-start;
+  margin-left: 40px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  position: relative;
+  transition-property: color;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
+}
+
+.header__back-link:before {
+  content: " ";
+  width: 30px;
+  height: 16px;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url('../../halls/halls_images/arrow.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header__back-link:hover {
+  color: #6c0287;
+}
+
+.header__back-link:active {
+  color: #640aa3;
+}
+
+.header__back-link:focus-visible {
+  outline: 1px solid #cd06ff;
+  outline-offset: 3px;
+}
+
+.hero {
+  padding-top: 0;
+}
+
+.hero__container {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1440px);
+  grid-template-rows: repeat(1, 750px);
+}
+
+.hero__wrapper {
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero__wrapper_80s-vibes {
+  background-image: url(../../halls/halls_images/80s_vibes.jpg);
+}
+
+.hero__wrapper_star-wars {
+  background-image: url(../../halls/halls_images/star_wars.jpg);
+}
+
+.hero__wrapper_wild-west {
+  background-image: url(../../halls/halls_images/wild_west.jpg);
+}
+
+.hero__wrapper_neon-style {
+  background-image: url(../../halls/halls_images/neon_style.jpg);
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 80px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.description__text {
+  max-width: 1000px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+}
