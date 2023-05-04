@@ -8,25 +8,19 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 40px;
+  line-height: 50px;
 }
 
 .halls__list {
-  list-style: none;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .halls__item{
-  display: inline-block;
+  display: block;
   max-width: 580px;
-  margin-bottom: 14px;
-}
-
-.halls__item:not(:nth-child(2n)) {
-  margin-right: 14px;
-}
-
-.halls__item:nth-last-child(-n+2) {
-  margin-bottom: 0;
 }
 
 .card .card__title{
@@ -60,6 +54,7 @@
   text-align: center;
   font-weight: 700;
   font-size: 70px;
+  line-height: 80px;
   color: var(--text-color, #ffffff);
   position: absolute;
   top: 50%;

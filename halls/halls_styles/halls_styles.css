@@ -2,13 +2,10 @@
 @import "../../styles/global.css";
 @import "../../styles/variables.css";
 @import "../../styles/header.css";
-/* @import "./halls.css"; */
-@import "../../styles/contacts.css";
+@import "../../styles/halls.css";
+@import "../../styles/footer.css";
 
-
-
-
-
+/* header */
 .header {
   top: 100px;
   padding-bottom: 20px;
@@ -47,53 +44,51 @@
 }
 
 .header__back-link:hover {
-  color: #6c0287;
+  color: var(--hover-color, #6c0287);
 }
 
 .header__back-link:active {
-  color: #640aa3;
+  color: var(--active-color, #640aa3);
 }
 
 .header__back-link:focus-visible {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--focus-color, #cd06ff);
   outline-offset: 3px;
 }
 
+/* hero */
 .hero {
   padding-top: 0;
 }
 
 .hero__container {
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(1, 1440px);
-  grid-template-rows: repeat(1, 750px);
-}
-
-.hero__wrapper {
-  background-position: bottom;
+  max-width: 100%;
+  height: 750px;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
 
-.hero__wrapper_80s-vibes {
+.hero__container_80s-vibes {
   background-image: url(../../halls/halls_images/80s_vibes.jpg);
 }
 
-.hero__wrapper_star-wars {
+.hero__container_star-wars {
   background-image: url(../../halls/halls_images/star_wars.jpg);
 }
 
-.hero__wrapper_wild-west {
+.hero__container_wild-west {
   background-image: url(../../halls/halls_images/wild_west.jpg);
 }
 
-.hero__wrapper_neon-style {
+.hero__container_neon-style {
   background-image: url(../../halls/halls_images/neon_style.jpg);
 }
 
 .hero__title {
+  place-self: center;
   font-weight: 700;
   font-size: 90px;
   line-height: 80px;
@@ -104,10 +99,92 @@
   transform: translate(-50%, -50%);
 }
 
+/* description */
 .description__text {
+  margin: 0 auto;
   max-width: 1000px;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.5;
   text-align: center;
 }
+
+.description__text_star-wars {
+  text-transform: uppercase;
+}
+
+/* room-about */
+.room-about__title {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.room-about__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.room-about__image {
+  width: 600px;
+  height: 424px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.room-about__image_80s-vibes {
+  background-image: url(../../image/halls_vibes.jpg);
+}
+
+.room-about__image_star-wars {
+  background-image: url(../../image/halls_starwars.jpg);
+}
+
+.room-about__image_wild-west {
+  background-image: url(../../image/halls_wildwest.jpg);
+}
+
+.room-about__image_neon-style {
+  background-image: url(../../image/halls_neon.jpg);
+}
+
+.room-about__text {
+  max-width: 500px;
+  line-height: 28px;
+  white-space: pre-line;
+}
+
+.room-about__text_star-wars {
+  text-transform: uppercase;
+}
+
+/* halls */
+.halls__title {
+  margin-bottom: 40px;
+}
+
+.halls__item{
+  max-width: 380px;
+}
+
+.card__title {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.card__title_80s-vibes {
+  white-space: normal;
+}
+
+/* footer */
+.footer {
+  padding-top: 32px;
+  padding-bottom: 44px;
+}
+

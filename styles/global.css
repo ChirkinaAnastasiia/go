@@ -68,6 +68,16 @@ iframe {
   transform: scale(0);
 }
 
+
+/*меню не перекрывает заголовки при переходе по якорным ссылкам*/
+[id*="navigation"] {
+	border-top: 75px solid transparent;
+	margin-top: -75px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
 .container {
   max-width: 1440px;
   padding: 0 130px;
@@ -81,7 +91,7 @@ header {
 
 footer {
   padding-top: 55px;
-  padding-bottom: 10px;
+  padding-bottom: 21px;
 }
 
 section {
@@ -89,11 +99,3 @@ section {
   padding-bottom: 50px;
 }
 
-/*меню не перекрывает заголовки при переходе по якорным ссылкам*/
-[id*="navigation"] {
-	border-top: 75px solid transparent;
-	margin-top: -75px;
-	-moz-background-clip: padding;
-	-webkit-background-clip: padding-box;
-	background-clip: padding-box;
-}

@@ -14,7 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 156px 60px;
+  gap: 145px 60px;
 }
 
 .address {
