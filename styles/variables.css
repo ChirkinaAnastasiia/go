@@ -9,6 +9,9 @@
   --hover-color: #6c0287;
   --active-color: #640aa3;
   --outline-color: #cd06ff;
+  --burger-background-color: #6c0287;
+  --burger-hover-color: #cd06ff;
+  --burger-focus-color: #840aa3;
 }
 
 .hero {

@@ -103,4 +103,29 @@ section {
   .container {
     padding: 0 60px;
   }
+
+  header {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 0 42px;
+  }
+
+  header {
+    padding-top: 32px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  header {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
 }
