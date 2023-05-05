@@ -290,7 +290,7 @@ svg {
   }
 
   .hero__container{
-    height: 280px; 
+    height: 204px; 
   }
   
   .hero__container:after {
@@ -307,6 +307,7 @@ svg {
   
   .hero__description {
     margin-left: 19px;
+    margin-bottom: 16px;
     font-size: 10px;
     line-height: 14px;
   }

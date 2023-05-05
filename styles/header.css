@@ -112,6 +112,10 @@
 }
 
 @media (max-width: 900px) {
+  .header {
+    top: 62px;
+  }
+
   .navigation {
     display: none;
   }
@@ -187,6 +191,10 @@
 }
 
 @media (max-width: 540px) {
+  .header {
+    top: 40px;
+  }
+
   .header__button {
     display: none;
   }
