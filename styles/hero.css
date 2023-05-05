@@ -16,7 +16,7 @@
   right: 130px;
   bottom: 0;
   background-image: url('../image/hero_man.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -150,6 +150,7 @@ svg {
 @media (max-width: 1280px) {
   .hero {
     padding-top: 10px;
+    padding-bottom: 43px;
   }
 
   .hero__container{
@@ -209,6 +210,10 @@ svg {
 }
 
 @media (max-width: 900px) {
+  .hero {
+    padding-bottom: 40px;
+  }
+
   .hero__container{
     height: 537px; 
   }
@@ -287,6 +292,7 @@ svg {
 @media (max-width: 540px) {
   .hero {
     padding-top: 5px;
+    padding-bottom: 26px;
   }
 
   .hero__container{

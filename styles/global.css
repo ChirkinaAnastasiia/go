@@ -107,6 +107,11 @@ section {
   header {
     padding-bottom: 20px;
   }
+
+  section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
 }
 
 @media (max-width: 900px) {
