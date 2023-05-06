@@ -23,6 +23,7 @@ fieldset{
 .date-choice__title {
   margin: 0 auto 40px auto;
   text-align: center;
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
 }
@@ -31,6 +32,7 @@ fieldset{
 .tabletop-game__title,
 .extra__title {
   margin-bottom: 23px;
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
 }
@@ -182,6 +184,7 @@ fieldset{
   cursor: pointer;
   padding-left: 37px;
   font-size: 22px;
+  line-height: 25px;
   position: relative;
 }
 
@@ -255,7 +258,7 @@ fieldset{
   margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-end; */
+  align-items: flex-end;
   row-gap: 50px;
 }
 
@@ -406,7 +409,7 @@ fieldset{
 }
 
 /*кнопка: забронировать*/
-.reservation__form__button {
+.reservation__button {
   display: block;
   margin-left: auto;
   padding: 16px 50px;
@@ -426,23 +429,23 @@ fieldset{
   transition-timing-function: ease-in-out;
 }
 
-.reservation__form__button:hover {
+.reservation__button:hover {
   background-color: var(--button-state-color, #eadeed);
   outline: 3px solid var(--button-state-outline-color, #6c0287);
   filter: none;
 }
 
-.reservation__form__button:active {
+.reservation__button:active {
   background-color: var(--button-state-color, #eadeed);
   filter: none;
 }
 
-.reservation__form__button:focus {
+.reservation__button:focus {
   outline: 3px solid var(--button-state-outline-color, #6c0287);
   filter: none;
 }
 
-@media (max-width:1150px) {
+@media (max-width: 1150px) {
   .halls-choice__label {
     font-size: 20px;
     line-height: 24px;
@@ -451,9 +454,13 @@ fieldset{
     width: 180px;
     height: 44px;
   }
+
+  .halls-choice__radio:focus + .halls-choice__label {
+    border-radius: 6px;
+  }
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
   .reservation {
     padding: 60px 0;
   }
@@ -481,22 +488,22 @@ fieldset{
   }
 
   .date-choice__name {
-    max-width: 251px;
+    width: 251px;
   }
 
   .date-choice__name__input {
-    max-width: 251px;
+    width: 251px;
   }
 
   .date-choice__contacts {
-    max-width: 251px;
+    width: 254px;
   }
 
   .date-choice__contacts__input {
-    max-width: 251px;
+    width: 254px;
   }
 
-  .reservation__form__button {
+  .reservation__button {
     padding: 13px 45px;
     width: 254px;
     height: 50px;
@@ -505,12 +512,12 @@ fieldset{
   }
 }
 
-@media (max-width:950px) {
+@media (max-width: 950px) {
   .date-choice {
     width: 100%;
     margin-bottom: 48px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 42px 106px;
   }
 
@@ -518,11 +525,118 @@ fieldset{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .date-choice__date__container {
     gap: 14px;
   }
+}
 
+@media (max-width: 840px) {
+  .halls-choice__label {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 9px 20px;
+    width: 150px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservation {
+    padding: 50px 0;
+  }
+
+  .reservation__title {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .halls-choice__title,
+  .amusement-choice__title,
+  .date-choice__title {
+    margin: 0 auto 30px auto;
+  }
+
+  .halls-choice {
+    margin-bottom: 50px;
+  }
+
+  .amusement-choice {
+    max-width: 600px;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .console,
+  .tabletop-game,
+  .extra {
+    gap: 40px;
+  }
+
+  .console__label {
+    padding-left: 60px;
+  }
+
+  .console__radio {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tabletop-game__label,
+  .extra__label {
+    padding-left: 60px;
+  }
+
+  .tabletop-game__checkbox,
+  .extra__checkbox {
+    width: 40px;
+    height: 40px;
+  }
+
+  .date-choice {
+    justify-content: space-between;
+    gap: 42px;
+  }
+
+  .date-choice__date {
+    justify-content: space-between;
+  }
+
+  .date-choice__name {
+    width: 280px;
+  }
+
+  .date-choice__name__input {
+    width: 280px;
+  }
+
+  .date-choice__contacts {
+    width: 300px;
+  }
+
+  .date-choice__contacts__input {
+    width: 300px;
+  }
+
+  .reservation__button {
+    padding: 16px 50px;
+    width: 300px;
+    height: 60px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 730px) {
+  .halls-choice {
+    max-width: 400px;
+    gap: 25px;
+    margin: 0 auto 50px auto;
+    justify-content: center;
+  }
+
+  
 }
