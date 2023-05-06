@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <!-- <header class="header">
     <div class="container header__container">
       <button class="header__menu-button">
         <span class="header__burger-menu header__burger-menu_top"></span>
@@ -158,8 +158,8 @@
           </li>
         </ul>
       </div>
-    </section>
-<!--
+    </section> -->
+
     <section class="reservation" id="navigation-reservation">
       <div class="container">
         <h2 class="reservation__title">Забронировать зал просто</h2>
@@ -247,13 +247,15 @@
             </fieldset>
           </fieldset>
   
-          <div class="date-choice-container">
+          <div class="date-choice__wrapper">
             <fieldset class="date-choice">
               <legend class="date-choice__title">Выбери дату и время</legend>
     
               <div class="date-choice__date">
-                <input class="date-choice__date__date-input" type="date" name="date" required>
-                <input class="date-choice__date__time-input" type="time" name="time" required>
+                <div class="date-choice__date__container">
+                  <input class="date-choice__date__date-input" type="date" name="date" required>
+                  <input class="date-choice__date__time-input" type="time" name="time" required>
+                </div>
   
                 <label class="date-choice__date__label">
                   <select class="date-choice__date__select" name="person-number" required>
@@ -296,7 +298,7 @@
         </form>
       </div>
     </section>
-
+<!--
     <section class="about" id="navigation-about">
       <div class="container">
         <h2 class="about__title">О нас</h2>
