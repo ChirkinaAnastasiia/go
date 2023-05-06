@@ -40,6 +40,9 @@ fieldset{
 /*выбери зал*/
 .halls-choice {
   margin-bottom: 60px;
+}
+
+.halls-choice__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -565,7 +568,7 @@ fieldset{
   }
 
   .amusement-choice {
-    max-width: 600px;
+    max-width: 688px;
     flex-wrap: wrap;
     gap: 32px;
   }
@@ -632,11 +635,168 @@ fieldset{
 
 @media (max-width: 730px) {
   .halls-choice {
+    margin: 0 auto 50px auto;
+  }
+
+  .halls-choice__container {
+    margin: 0 auto;
     max-width: 400px;
     gap: 25px;
-    margin: 0 auto 50px auto;
     justify-content: center;
   }
 
+  .date-choice {
+    margin: 0 auto 48px auto;
+    max-width: 400px;
+    justify-content: center;
+  }
+
+  .date-choice__date__container {
+    gap: 32px;
+  }
+
+  .date-choice__date {
+    max-width: 300px;
+    flex-wrap: wrap;
+  }
+
+  .date-choice__name {
+    width: 300px;
+  }
+
+  .date-choice__name__input {
+    width: 300px;
+  }
+
+  .reservation__button {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservation {
+    padding: 30px 0;
+  }
+
+  .reservation__title {
+    margin-bottom: 13px;
+    font-size: 14px;
+    line-height: 20px;
+  }
   
+  .halls-choice__title,
+  .amusement-choice__title {
+    margin: 0 auto 15px auto;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .date-choice__title {
+    margin: 0 auto 25px auto;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .console__title,
+  .tabletop-game__title,
+  .extra__title {
+    margin-bottom: 23px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .halls-choice {
+    margin-bottom: 30px;
+  }
+
+  .halls-choice__container {
+    max-width: 280px;
+    gap: 14px 6px;
+    justify-content: space-between;
+  }
+
+  .halls-choice__label {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 6px 20px;
+    width: 130px;
+    height: 30px;
+    border-radius: 4px;
+  }
+
+  .halls-choice__radio:focus + .halls-choice__label {
+    border-radius: 4px;
+  }
+
+  .amusement-choice {
+    max-width: 280px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .console__label {
+    padding-left: 50px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .console__radio {
+    width: 30px;
+    height: 30px;
+  }
+
+  .tabletop-game__label,
+  .extra__label {
+    padding-left: 50px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .tabletop-game__checkbox,
+  .extra__checkbox {
+    width: 30px;
+    height: 30px;
+  }
+
+  .date-choice {
+    margin-bottom: 35px;
+    gap: 35px;
+  }
+
+  .date-choice__date__container {
+    gap: 12px;
+  }
+
+  .date-choice__date {
+    gap: 15px;
+  }
+
+  .date-choice__date__select {
+    width: 280px;
+  }
+
+  .date-choice__name {
+    width: 280px;
+  }
+
+  .date-choice__name__input {
+    width: 280px;
+  }
+
+  .date-choice__contacts {
+    width: 280px;
+  }
+
+  .date-choice__contacts__input {
+    width: 280px;
+  }
+
+  .reservation__button {
+    padding: 17px 58px;
+    width: 280px;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 26px;
+    filter: drop-shadow(0px 0px 6px rgb(255, 255, 255));
+  }
 }
