@@ -158,7 +158,7 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
     <section class="reservation" id="navigation-reservation">
       <div class="container">
@@ -249,40 +249,40 @@
             </fieldset>
           </fieldset>
   
-          <div class="date-choice__wrapper">
-            <fieldset class="date-choice">
-              <legend class="date-choice__title">Выбери дату и время</legend>
-    
-              <div class="date-choice__date">
-                <div class="date-choice__date__container">
-                  <input class="date-choice__date__date-input" type="date" name="date" required>
-                  <input class="date-choice__date__time-input" type="time" name="time" required>
-                </div>
+          <fieldset class="date-choice">
+            <legend class="date-choice__title">Выбери дату и время</legend>
   
-                <label class="date-choice__date__label">
-                  <select class="date-choice__date__select" name="person-number" required>
-                    <option value="">Сколько человек</option>
-                    <option value="1-5">1 - 5</option>
-                    <option value="5-10">5 - 10</option>
-                    <option value="10-15">10 - 15</option>
-                    <option value="more then 15">больше 15</option>
-                  </select>
-                </label>
+            <div class="date-choice__date">
+              <div class="date-choice__date__container">
+                <input class="date-choice__date__date-input" type="date" name="date" required>
+                <input class="date-choice__date__time-input" type="time" name="time" required>
+              </div>
+
+              <label class="date-choice__date__label">
+                <select class="date-choice__date__select" name="person-number" required>
+                  <option value="">Сколько человек</option>
+                  <option value="1-5">1 - 5</option>
+                  <option value="5-10">5 - 10</option>
+                  <option value="10-15">10 - 15</option>
+                  <option value="more then 15">больше 15</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="date-choice__name">
+              <div>
+                <label class="date-choice__name__label" for="name">Имя</label>
+                <input class="date-choice__name__input" type="text" id="name" name="name" required>
               </div>
   
-              <div class="date-choice__name">
-                <div>
-                  <label class="date-choice__name__label" for="name">Имя</label>
-                  <input class="date-choice__name__input" type="text" id="name" name="name" required>
-                </div>
-    
-                <div>
-                  <label class="date-choice__name__label" for="surname">Фамилия</label>
-                  <input class="date-choice__name__input" type="text" id="surname" name="surname" required>
-                </div>
+              <div>
+                <label class="date-choice__name__label" for="surname">Фамилия</label>
+                <input class="date-choice__name__input" type="text" id="surname" name="surname" required>
               </div>
-  
-              <div class="date-choice__contacts">
+            </div>
+
+            <div class="date-choice__contacts">
+              <div class="date-choice__container">
                 <div>
                   <label class="date-choice__contacts__label" for="tel">Телефон</label>
                   <input class="date-choice__contacts__input" type="tel" id="tel" name="tel" required>
@@ -293,14 +293,14 @@
                   <input class="date-choice__contacts__input" type="email" id="email" name="email" required>
                 </div>
               </div>
-            </fieldset>
-  
-            <button class="reservation__button" type="submit">Забронировать</button>  
-          </div>
+
+              <button class="reservation__button" type="submit">Забронировать</button>
+            </div>
+          </fieldset>
         </form>
       </div>
-    </section>
-<!--
+    </section> -->
+
     <section class="about" id="navigation-about">
       <div class="container">
         <h2 class="about__title">О нас</h2>
@@ -331,7 +331,7 @@
         </div>
       </div>
     </section>
-
+<!--
     <section class="feedback" id="navigation-feedback">
       <div class="container feedback__container">
         <h2 class="feedback__title">Отзывы посетителей</h2><div class="feedback__item__container"></div>

@@ -252,21 +252,16 @@ fieldset{
 }
 
 /*выбери дату и время*/
-.date-choice__wrapper {
-  max-width: 980px;
-  margin: 0 auto;
-}
-
 .date-choice {
-  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   row-gap: 50px;
 }
 
 /*блок: дата, время, сколько человек*/
 .date-choice__date {
+  margin-top: 22px;
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -381,11 +376,19 @@ fieldset{
 
 /*блок: телефон, e-mail*/
 .date-choice__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.date-choice__container {
   width: 300px;
   height: 162px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 .date-choice__contacts__label {
@@ -414,7 +417,6 @@ fieldset{
 /*кнопка: забронировать*/
 .reservation__button {
   display: block;
-  margin-left: auto;
   padding: 16px 50px;
   width: 300px;
   height: 60px;
@@ -486,8 +488,8 @@ fieldset{
     max-width: 904px;
   }
 
-  .date-choice {
-    margin-bottom: 50px;
+  .date-choice__contacts {
+    gap: 50px;
   }
 
   .date-choice__name {
@@ -498,7 +500,7 @@ fieldset{
     width: 251px;
   }
 
-  .date-choice__contacts {
+  .date-choice__container {
     width: 254px;
   }
 
@@ -518,13 +520,13 @@ fieldset{
 @media (max-width: 950px) {
   .date-choice {
     width: 100%;
-    margin-bottom: 48px;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 42px 106px;
   }
 
   .date-choice__date {
+    margin-top: 0;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -533,6 +535,10 @@ fieldset{
 
   .date-choice__date__container {
     gap: 14px;
+  }
+
+  .date-choice__contacts {
+    gap: 48px;
   }
 }
 
@@ -616,7 +622,7 @@ fieldset{
     width: 280px;
   }
 
-  .date-choice__contacts {
+  .date-choice__container {
     width: 300px;
   }
 
@@ -646,7 +652,7 @@ fieldset{
   }
 
   .date-choice {
-    margin: 0 auto 48px auto;
+    margin: 0 auto;
     max-width: 400px;
     justify-content: center;
   }
@@ -656,6 +662,7 @@ fieldset{
   }
 
   .date-choice__date {
+    justify-content: space-around;
     max-width: 300px;
     flex-wrap: wrap;
   }
@@ -666,10 +673,6 @@ fieldset{
 
   .date-choice__name__input {
     width: 300px;
-  }
-
-  .reservation__button {
-    margin: 0 auto;
   }
 }
 
@@ -759,7 +762,6 @@ fieldset{
   }
 
   .date-choice {
-    margin-bottom: 35px;
     gap: 35px;
   }
 
@@ -783,8 +785,12 @@ fieldset{
     width: 280px;
   }
 
-  .date-choice__contacts {
+  .date-choice__container {
     width: 280px;
+  }
+
+  .date-choice__contacts {
+    gap: 35px;
   }
 
   .date-choice__contacts__input {
