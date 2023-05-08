@@ -8,6 +8,7 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 40px;
+  line-height: 50px;
 }
 
 .faq__list {
@@ -30,9 +31,10 @@
   text-align: left;
   font-weight: 700;
   font-size: 24px;
+  line-height: 28px;
 }
 
-svg {
+.faq__icon {
   border-radius: 100%;
   transition-property: background-color, fill, stroke;
   transition-duration: .4s;
@@ -110,4 +112,97 @@ svg {
 .faq__button:focus-visible {
   outline: 1px solid var(--focus-color, #cd06ff);
   outline-offset: 3px;
+}
+
+@media (max-width: 1024px) {
+  .faq {
+    padding-bottom: 58px;
+  }
+  
+  .faq__title {
+    margin-bottom: 26px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  
+  .faq__list {
+    gap: 16px;
+  }
+  
+  .faq__button {
+    height: 70px;
+    padding: 11px 20px 11px 25px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .faq__icon > circle {
+    stroke-width: 1px;
+  }
+
+  .faq__item:nth-child(even) .faq__button {
+    background-color: var(--button-color, #ffffff);
+    color: var(--text-dark-color, #1c1a1a);
+  }
+
+  .faq__item:nth-child(even) .faq__button > svg > path {
+    fill: var(--plus-dark-color, #6c0287);
+  }
+  
+  .faq__item:nth-child(even) .faq__button > svg > circle {
+    stroke: var(--plus-dark-color, #6c0287);
+  }
+
+  .faq__item:nth-child(even) .faq__button:hover > svg {
+    background-color: var(--plus-dark-color, #6c0287);
+  }
+  
+  .faq__item:nth-child(even) .faq__button:hover > svg > path {
+    fill: var(--plus-color, #ffffff);
+  }
+  
+  .faq__item:nth-child(even) .faq__button:active > svg > path {
+    fill: var(--plus-dark-color, #6c0287);
+  }
+}
+
+@media (max-width: 768px) {
+  .faq {
+    padding-bottom: 60px;
+  }
+  
+  .faq__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .faq__button {
+    padding: 12px 65px 12px 54px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .faq {
+    padding-bottom: 23px;
+  }
+  
+  .faq__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .faq__list {
+    gap: 10px;
+  }
+
+  .faq__button {
+    height: 46px;
+    padding: 8px 13px;
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
