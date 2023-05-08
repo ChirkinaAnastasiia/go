@@ -68,7 +68,6 @@ iframe {
   transform: scale(0);
 }
 
-
 /*меню не перекрывает заголовки при переходе по якорным ссылкам*/
 [id*="navigation"] {
 	border-top: 75px solid transparent;
@@ -112,15 +111,31 @@ section {
     padding-top: 35px;
     padding-bottom: 35px;
   }
+
+  footer {
+    padding-top: 12px;
+    padding-bottom: 19px;
+  }
 }
 
-@media (max-width: 900px) {
+
+@media (max-width: 768px) {
   .container {
     padding: 0 42px;
   }
 
   header {
     padding-top: 32px;
+  }
+
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  footer {
+    padding-top: 10px;
+    padding-bottom: 18px;
   }
 }
 
@@ -133,4 +148,15 @@ section {
     padding-top: 20px;
     padding-bottom: 15px;
   }
+
+  section {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  footer {
+    padding-top: 7px;
+    padding-bottom: 24px;
+  }
 }
+

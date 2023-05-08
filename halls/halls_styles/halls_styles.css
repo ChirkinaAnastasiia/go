@@ -72,19 +72,19 @@
 }
 
 .hero__container_80s-vibes {
-  background-image: url(../../halls/halls_images/80s_vibes.jpg);
+  background-image: url('../../halls/halls_images/80s_vibes.jpg');
 }
 
 .hero__container_star-wars {
-  background-image: url(../../halls/halls_images/star_wars.jpg);
+  background-image: url('../../halls/halls_images/star_wars.jpg');
 }
 
 .hero__container_wild-west {
-  background-image: url(../../halls/halls_images/wild_west.jpg);
+  background-image: url('../../halls/halls_images/wild_west.jpg');
 }
 
 .hero__container_neon-style {
-  background-image: url(../../halls/halls_images/neon_style.jpg);
+  background-image: url('../../halls/halls_images/neon_style.jpg');
 }
 
 .hero__title {
@@ -139,19 +139,19 @@
 }
 
 .room-about__image_80s-vibes {
-  background-image: url(../../image/halls_vibes.jpg);
+  background-image: url('../../image/halls_vibes.jpg');
 }
 
 .room-about__image_star-wars {
-  background-image: url(../../image/halls_starwars.jpg);
+  background-image: url('../../image/halls_starwars.jpg');
 }
 
 .room-about__image_wild-west {
-  background-image: url(../../image/halls_wildwest.jpg);
+  background-image: url('../../image/halls_wildwest.jpg');
 }
 
 .room-about__image_neon-style {
-  background-image: url(../../image/halls_neon.jpg);
+  background-image: url('../../image/halls_neon.jpg');
 }
 
 .room-about__text {

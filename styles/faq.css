@@ -164,6 +164,10 @@
   .faq__item:nth-child(even) .faq__button:active > svg > path {
     fill: var(--plus-dark-color, #6c0287);
   }
+
+  .faq__item_hidden {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
