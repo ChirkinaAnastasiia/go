@@ -114,17 +114,19 @@
   outline-offset: 3px;
 }
 
-@media (max-width: 1024px) {
-  .faq {
-    padding-bottom: 58px;
-  }
-  
+@media (max-width: 1280px) {
   .faq__title {
     margin-bottom: 26px;
     font-size: 30px;
     line-height: 40px;
   }
-  
+}
+
+@media (max-width: 1024px) {
+  .faq {
+    padding-bottom: 58px;
+  }
+
   .faq__list {
     gap: 16px;
   }
@@ -192,12 +194,6 @@
   .faq {
     padding-bottom: 23px;
   }
-  
-  .faq__title {
-    margin-bottom: 15px;
-    font-size: 14px;
-    line-height: 18px;
-  }
 
   .faq__list {
     gap: 10px;
@@ -208,5 +204,13 @@
     padding: 8px 13px;
     font-size: 12px;
     line-height: 16px;
+  }
+}
+
+@media (max-width: 540px) {
+  .faq__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }

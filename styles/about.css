@@ -8,7 +8,7 @@
 }
 
 .about__image {
-  background-image: url(../image/about_collage.jpg);
+  background-image: url('../image/about_collage.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -207,8 +207,6 @@
   .quote:after {
     right: 90px;
   }
-
-
 }
 
 @media (max-width: 768px) {
@@ -339,7 +337,7 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   .about__title {
     margin-bottom: 15px;
     font-size: 14px;

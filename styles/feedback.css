@@ -177,7 +177,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   .feedback__container {
     padding: 0 20px;
   }

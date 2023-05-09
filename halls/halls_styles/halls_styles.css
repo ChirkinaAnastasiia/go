@@ -93,6 +93,7 @@
   font-size: 90px;
   line-height: 80px;
   text-transform: uppercase;
+  white-space: nowrap;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -156,6 +157,7 @@
 
 .room-about__text {
   max-width: 500px;
+  font-size: 20px;
   line-height: 28px;
   white-space: pre-line;
 }
@@ -167,6 +169,10 @@
 /* halls */
 .halls__title {
   margin-bottom: 40px;
+}
+
+.halls__list {
+  gap: 20px;
 }
 
 .halls__item{
@@ -189,5 +195,207 @@
 }
 
 @media (max-width: 1280px) {
+  .header {
+    top: 90px;
+  }
+
+  .header__wrapper {
+    gap: 50px;
+  }
+
+  .hero__container {
+    height: 534px;
+  }
+
+  .hero__title {
+    font-size: 80px;
+    line-height: 70px;
+  }
+
+  .description__text {
+    max-width: 800px;
+    font-size: 20px;
+  }
+
+  .room-about__title {
+    margin-bottom: 36px;
+    font-size: 30px;
+    line-height: 40px;
+  }
   
+  .room-about__wrapper {
+    justify-content: space-around;
+    gap: 30px;
+  }
+
+  .room-about__image {
+    width: 461px;
+    height: 326px;
+  }
+
+  .room-about__text {
+    max-width: 413px;
+    font-size: 18px;
+  }
+
+  .halls__title {
+    margin-bottom: 36px;
+  }
+  
+  .halls__item{
+    max-width: 288px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    top: 85px;
+  }
+
+  .header__wrapper {
+    gap: 40px;
+  }
+
+  .header__back-link {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .hero__container {
+    height: 402px;
+  }
+
+  .hero__title {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+
+  .description__text {
+    max-width: 688px;
+    font-size: 16px;
+  }
+
+  .room-about__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
+  .room-about__wrapper {
+    gap: 46px;
+  }
+
+  .room-about__image {
+    width: 329px;
+    height: 326px;
+  }
+
+  .room-about__text {
+    max-width: 313px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .halls {
+    padding-bottom: 60px;
+  }
+
+  .halls__title {
+    margin-bottom: 35px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
+  .halls__list {
+    gap: 6px;
+  }
+
+  .halls__item{
+    max-width: 224px;
+  }
+  
+  .card__title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .header {
+    top: 55px;
+    padding-bottom: 15px;
+  }
+
+  .header__wrapper {
+    gap: 20px;
+  }
+
+  .header__back-link {
+    margin-left: 22px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .header__back-link:before {
+    width: 16px;
+    height: 8px;
+    left: -22px;
+  }
+
+  .hero__container {
+    height: 168px;
+  }
+
+  .hero__title {
+    font-size: 30px;
+  }
+
+  .description__text {
+    max-width: 280px;
+  }
+
+  .room-about__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .room-about__wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .room-about__image {
+    width: 280px;
+    height: 180px;
+  }
+
+  .room-about__text {
+    max-width: 280px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .halls {
+    padding-bottom: 30px;
+  }
+
+  .halls__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .halls__list {
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .halls__item{
+    max-width: 280px;
+  }
+
+  .card__title_80s-vibes {
+    white-space: pre-line;
+  }
 }

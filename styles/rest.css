@@ -70,15 +70,17 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .rest {
-    padding-top: 40px;
-  }
-
+@media (max-width: 1280px) {
   .rest__title {
     margin-bottom: 36px;
     font-size: 30px;
     line-height: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .rest {
+    padding-top: 40px;
   }
 
   .rest__list {
@@ -130,7 +132,7 @@
   }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .rest {
     padding-top: 40px;
   }
@@ -162,7 +164,7 @@
   }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .rest__list {
     gap: 20px;
     justify-content: center;

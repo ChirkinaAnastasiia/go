@@ -68,17 +68,19 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .halls {
-    padding-bottom: 70px;
-  }
-
+@media (max-width: 1280px) {
   .halls__title {
     margin-bottom: 37px;
     font-size: 30px;
     line-height: 40px;
   }
-  
+}
+
+@media (max-width: 1024px) {
+  .halls {
+    padding-bottom: 70px;
+  }
+
   .halls__list {
     gap: 18px;
     justify-content: space-between;
