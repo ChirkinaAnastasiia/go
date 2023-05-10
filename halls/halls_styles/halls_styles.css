@@ -172,11 +172,16 @@
 }
 
 .halls__list {
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .halls__item{
-  max-width: 380px;
+  display: flex;
+  flex: 1 1 50px;
+  width: 380px;
+  min-width: 288px;
 }
 
 .card__title {
@@ -185,7 +190,7 @@
 }
 
 .card__title_80s-vibes {
-  white-space: normal;
+  white-space: nowrap;
 }
 
 /* footer */
@@ -243,7 +248,7 @@
   }
   
   .halls__item{
-    max-width: 288px;
+    min-width: 240px;
   }
 }
 
@@ -311,7 +316,7 @@
   }
 
   .halls__item{
-    max-width: 224px;
+    min-width: 130px;
   }
   
   .card__title {
