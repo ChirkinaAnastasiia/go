@@ -86,7 +86,7 @@ fieldset{
   color: var(--text-color, #ffffff);
 }
 
-.halls-choice__radio:focus + .halls-choice__label {
+.halls-choice__radio:active + .halls-choice__label {
   background-color: var(--radio-color, #ffffff);
   outline: 3px solid var(--radio-hover-outline-color, #640aa3);
   border-radius: 8px;
