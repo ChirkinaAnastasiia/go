@@ -162,6 +162,14 @@
   .faq__item:nth-child(even) .faq__button:hover > svg > path {
     fill: var(--plus-color, #ffffff);
   }
+
+  .faq__item:nth-child(even) .faq__button:active > svg {
+    background-color: transparent;
+  }
+  
+  .faq__item:nth-child(even) .faq__button:active > svg > path:first-child {
+    fill: none;
+  }
   
   .faq__item:nth-child(even) .faq__button:active > svg > path {
     fill: var(--plus-dark-color, #6c0287);
