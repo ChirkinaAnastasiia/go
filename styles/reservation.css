@@ -275,16 +275,39 @@ fieldset{
   justify-content: space-between;
 }
 
+input[type=date]::-webkit-calendar-picker-indicator,
+input[type=time]::-webkit-calendar-picker-indicator {
+  opacity: 0 !important;
+}
+
+input[type=date]::-webkit-datetime-edit,
+input[type=time]::-webkit-datetime-edit {
+  font-size: 13px;
+}
+
+.date-choice__date__date-input::placeholder,
+.date-choice__date__time-input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #211e1e;
+}
+
 .date-choice__date__date-input {
   cursor: pointer;
   border: none;
   width: 134px;
   height: 52px;
-  padding: 12px 20px;
+  padding: 12px 15px 12px 20px;
+  font-size: 13px;
   background-color: var(--input-color, #ffffff);
   transition-property: outline;
   transition-duration: .2s;
   transition-timing-function: ease-in-out;
+}
+
+.date-choice__date__date-label {
+  position: relative;
 }
 
 .date-choice__date__date-input:focus {
@@ -297,10 +320,15 @@ fieldset{
   width: 134px;
   height: 52px;
   padding: 12px 20px;
+  font-size: 13px;
   background-color: var(--input-color, #ffffff);
   transition-property: outline;
   transition-duration: .2s;
   transition-timing-function: ease-in-out;
+}
+
+.date-choice__date__time-label {
+  position: relative;
 }
 
 .date-choice__date__time-input:focus {
@@ -312,6 +340,8 @@ fieldset{
   background-color: var(--input-color, #ffffff);
 }
 
+.date-choice__date__date-label:after,
+.date-choice__date__time-label:after,
 .date-choice__date__label:after {
   content: '';
   width: 21px;
@@ -319,10 +349,11 @@ fieldset{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 27px;
+  right: 16px;
   background-image: url('../image/input_triangle.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 .date-choice__date__select {

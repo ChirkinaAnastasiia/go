@@ -7,6 +7,7 @@
   <link type="image/svg+xml" rel="icon" href="./image/favicon.svg">
   <title>Game Over - игровое пространство виртуальной реальности</title>
   <link rel="stylesheet" href="./styles/style.css">
+  <script type="module" src="./js/script.js"></script>
 </head>
 
 <body>
@@ -255,8 +256,12 @@
   
             <div class="date-choice__date">
               <div class="date-choice__date__container">
-                <input class="date-choice__date__date-input" type="date" name="date" required>
-                <input class="date-choice__date__time-input" type="time" name="time" required>
+                <label class="date-choice__date__date-label">
+                  <input class="date-choice__date__date-input" type="text" name="date" placeholder="Дата" onfocus="this.type='date'" onblur="if(this.value==''){this.type='text'}" required>
+                </label>
+                <label class="date-choice__date__time-label">
+                  <input class="date-choice__date__time-input" type="text" name="time" placeholder="Время" onfocus="this.type='time'" onblur="if(this.value==''){this.type='text'}" required>
+                </label>
               </div>
 
               <label class="date-choice__date__label">
@@ -381,49 +386,61 @@
           <li class="faq__item">
             <button class="faq__button">
               <span>Можно ли забронировать комнату онлайн?</span>
-
               <svg class="faq__icon" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.8305 14H23.5085V34H22.8305V14Z" fill="white"/>
                 <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="white"/>
                 <circle cx="23" cy="23" r="22" stroke="white" stroke-width="2"/>
               </svg>
             </button>
+
+            <div class="faq__text-wrapper">
+              <p class="faq__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону 8 (999) 958 - 48 - 38</p>
+            </div>
           </li>
 
           <li class="faq__item">
             <button class="faq__button">
               <span>Могут ли мне врнуть деньги за бронь?</span>
-
               <svg class="faq__icon" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.8305 14H23.5085V34H22.8305V14Z" fill="white"/>
                 <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="white"/>
                 <circle cx="23" cy="23" r="22" stroke="white" stroke-width="2"/>
               </svg>
             </button>
+
+            <div class="faq__text-wrapper">
+              <p class="faq__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону 8 (999) 958 - 48 - 38</p>
+            </div>
           </li>
 
           <li class="faq__item">
             <button class="faq__button">
               <span>Какая комната самая популярная?</span>
-
               <svg class="faq__icon" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.8305 14H23.5085V34H22.8305V14Z" fill="white"/>
                 <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="white"/>
                 <circle cx="23" cy="23" r="22" stroke="white" stroke-width="2"/>
               </svg>
             </button>
+
+            <div class="faq__text-wrapper">
+              <p class="faq__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону 8 (999) 958 - 48 - 38</p>
+            </div>
           </li>
 
           <li class="faq__item">
             <button class="faq__button">
               <span>Как получить VIP карту?</span>
-
               <svg class="faq__icon" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.8305 14H23.5085V34H22.8305V14Z" fill="white"/>
                 <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="white"/>
                 <circle cx="23" cy="23" r="22" stroke="white" stroke-width="2"/>
               </svg>
             </button>
+
+            <div class="faq__text-wrapper">
+              <p class="faq__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону 8 (999) 958 - 48 - 38</p>
+            </div>
           </li>
 
           <li class="faq__item faq__item_hidden">
@@ -436,6 +453,10 @@
                 <circle cx="23" cy="23" r="22" stroke="white" stroke-width="2"/>
               </svg>
             </button>
+
+            <div class="faq__text-wrapper">
+              <p class="faq__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону 8 (999) 958 - 48 - 38</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -503,7 +524,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
