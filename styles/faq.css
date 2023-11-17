@@ -37,7 +37,7 @@
   width: 46px;
   height: 46px;
   transition-property: background-color, fill, stroke;
-  transition-duration: .4s;
+  transition-duration: .6s;
   transition-timing-function: ease-in-out;
 }
 
@@ -82,6 +82,14 @@
   stroke: var(--plus-dark-color, #6c0287);
 }
 
+.faq__item:nth-child(even).faq_active .faq__button > svg > path:first-child {
+  fill: none;
+}
+
+.faq__item:nth-child(odd).faq_active .faq__button > svg > path:first-child {
+  fill: none;
+}
+
 /*  иконка hover */
 .faq__item:nth-child(even) .faq__button:hover > svg {
   background-color: var(--plus-color, #ffffff);
@@ -97,31 +105,6 @@
 
 .faq__button:hover:nth-child(odd) > svg > path {
   fill: var(--plus-color, #ffffff);
-}
-
-/* иконка active */
-.faq__item:nth-child(even) .faq__button:active > svg {
-  background-color: transparent;
-}
-
-.faq__item:nth-child(even) .faq__button:active > svg > path:first-child {
-  fill: none;
-}
-
-.faq__item:nth-child(even) .faq__button:active > svg > path {
-  fill: var(--plus-color, #ffffff);
-}
-
-.faq__button:active:nth-child(odd) > svg {
-  background-color: transparent;
-}
-
-.faq__button:active:nth-child(odd) > svg > path:first-child {
-  fill: none;
-}
-
-.faq__button:active:nth-child(odd) > svg > path {
-  fill: var(--plus-dark-color, #6c0287);
 }
 
 /* кнопка focus-visible */
@@ -171,7 +154,7 @@
   .faq__item:nth-child(even) .faq__button > svg > path {
     fill: var(--plus-dark-color, #6c0287);
   }
-  
+
   .faq__item:nth-child(even) .faq__button > svg > circle {
     stroke: var(--plus-dark-color, #6c0287);
   }

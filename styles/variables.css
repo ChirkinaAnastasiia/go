@@ -66,3 +66,15 @@
   --link-active-color: #640aa3;
   --icon-hover-color: #eadeed;
 }
+
+.modal {
+  --close-hover-color: #cd06ff;
+  --close-active-color: #840aa3;
+  --background-color: #440f51;
+  --input-color: #ffffff;
+  --input-outline-color: #cd06ff;
+  --button-background-color: #ffffff;
+  --button-text-color: #6c0287;
+  --button-state-color: #eadeed;
+  --button-state-outline-color: #6c0287;
+}

@@ -1,6 +1,7 @@
 @import "./normalize.css";
 @import "./variables.css";
 @import "./global.css";
+@import "./modal.css";
 @import "./header.css";
 @import "./hero.css";
 @import "./rest.css";
@@ -10,3 +11,4 @@
 @import "./feedback.css";
 @import "./faq.css";
 @import "./footer.css";
+

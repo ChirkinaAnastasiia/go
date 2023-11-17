@@ -4,6 +4,7 @@
 @import "../../styles/header.css";
 @import "../../styles/halls.css";
 @import "../../styles/footer.css";
+@import "../../styles/modal.css";
 
 /* header */
 .header {
@@ -54,6 +55,10 @@
 .header__back-link:focus-visible {
   outline: 1px solid var(--focus-color, #cd06ff);
   outline-offset: 3px;
+}
+
+.modal-form-overlay.is-visible .modal-form {
+  top: 215px;
 }
 
 /* hero */
@@ -346,6 +351,10 @@
     left: -22px;
   }
 
+  .modal-form-overlay.is-visible .modal-form {
+    top: 130px;
+  }
+
   .hero__container {
     height: 168px;
   }
@@ -402,5 +411,11 @@
 
   .card__title_80s-vibes {
     white-space: pre-line;
+  }
+}
+
+@media (max-width: 430px) {
+  .modal-form-overlay.is-visible .modal-form {
+    top: 20px;
   }
 }
