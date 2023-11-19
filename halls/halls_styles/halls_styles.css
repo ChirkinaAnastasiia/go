@@ -30,6 +30,7 @@
   transition-property: color;
   transition-duration: .4s;
   transition-timing-function: ease-in-out;
+  z-index: 15;
 }
 
 .header__back-link:before {
