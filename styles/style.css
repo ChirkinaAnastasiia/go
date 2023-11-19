@@ -1,6 +1,7 @@
 @import "./normalize.css";
 @import "./variables.css";
 @import "./global.css";
+@import "./menu.css";
 @import "./modal.css";
 @import "./header.css";
 @import "./hero.css";

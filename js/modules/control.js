@@ -1,5 +1,5 @@
 const modalControl = (modalOverlay) => {
-  const btnCall = document.querySelector('.header__button');
+  const btnCall = document.querySelectorAll('.call-btn');
 
   const openModal = () => {
     modalOverlay.classList.add('is-visible');
@@ -9,7 +9,7 @@ const modalControl = (modalOverlay) => {
     modalOverlay.classList.remove('is-visible');
   };
 
-  btnCall.addEventListener('click', openModal);
+  btnCall.forEach(item => item.addEventListener('click', openModal));
 
   modalOverlay.addEventListener('click', e => {
     const target = e.target;

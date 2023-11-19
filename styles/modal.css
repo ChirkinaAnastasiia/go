@@ -139,6 +139,10 @@
   .modal-form {
     padding: 60px 60px 80px;
   }
+
+  .modal-form-overlay {
+    z-index: 11;
+  }
 }
 
 @media (max-width: 430px) {
@@ -173,10 +177,6 @@
     height: 52px;
     border-radius: 8px;
     font-size: 18px;
-  }
-
-  .modal-form-overlay {
-    z-index: 11;
   }
 
   .modal-form-overlay.is-visible .modal-form {

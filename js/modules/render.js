@@ -12,5 +12,6 @@ const renderModal = () => {
   };
 };
 
+
 export {renderModal};
 

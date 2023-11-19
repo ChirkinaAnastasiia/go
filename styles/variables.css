@@ -78,3 +78,13 @@
   --button-state-color: #eadeed;
   --button-state-outline-color: #6c0287;
 }
+
+.menu {
+  --link-hover-color: #6c0287;
+  --link-active-color: #cd06ff;
+  --background-color: #1b1a1b;
+  --button-text-color: #ffffff;
+  --button-outline-color: #cd06ff;
+  --button-hover-color: #6c0287;
+  --button-active-color: #640aa3;
+}
