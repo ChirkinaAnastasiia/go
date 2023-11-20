@@ -30,6 +30,7 @@ const startAnimation = (duration, callback) => {
 const showMenu = () => {
   const modalOverlay = document.querySelector('.modal-form-overlay');
   modalOverlay.classList.remove('is-visible');
+  burgerMenu.style.top = `${topPosition}px`;
 
   startAnimation(duration, (progress) => {
     const top = progress * (distance - 5);
@@ -42,6 +43,8 @@ const showMenu = () => {
 };
 
 const hideMenu = () => {
+  burgerMenu.style.top = `${topPosition}px`;
+
   startAnimation(duration, (progress) => {
     const top = progress * distance;
     burgerMenu.style.transform = `translateY(${-top}px)`;
@@ -53,27 +56,19 @@ const hideMenu = () => {
 };
 
 burgerBtn.addEventListener('click', e => {
-  const target = e.target;
-  burgerMenu.style.top = `${topPosition}px`;
-
-  if (target.closest('.burger__active')) {
+  if (e.target.closest('.burger__active')) {
     hideMenu();
-  } else if (target.closest('.header__menu-button')) {
+  } else if (e.target.closest('.header__menu-button')) {
     showMenu();
   }
 });
 
 burgerOverlay.addEventListener('click', e => {
-  const target = e.target;
-  burgerMenu.style.top = `${topPosition}px`;
-
-  if (target.closest('.overlay-visible')) {
+  if (e.target.closest('.overlay-visible')) {
     hideMenu();
   }
 });
 
 callBtn.addEventListener('click', () => {
-  burgerMenu.style.top = `${topPosition}px`;
-
   hideMenu();
 });
